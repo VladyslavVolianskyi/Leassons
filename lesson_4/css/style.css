@@ -1,0 +1,57 @@
+@import url(reset.css);
+*{
+	color: darkred;
+}
+.howe-work-title{
+	color: red !important;
+}
+h1{
+	color: chocolate;
+}
+.сhronology-title{
+	color: skyblue;
+}
+#footer-link{
+	color: olivedrab;
+}
+p.descr-header{
+	color: purple;
+}
+.one-item.histori{
+	color: gold;
+}
+.two-item, .three-item{
+	color: darkkhaki;
+}
+.item-conteiner p{
+	color: orange;
+}
+.item-conteiner .four-item{
+	color: fuchsia;
+}.item-conteiner-two *{
+	color: greenyellow;
+}
+.item-conteiner-thee > P{
+	color: gray;
+}
+.fife-item ~ p{
+	color: navy;
+}
+.six-item + p {
+	color: firebrick;
+}
+[class*="-text"]{
+	color: slateblue;
+}
+.embeddedness-item-one + p {
+	color: orchid;
+}
+.embeddedness-item-two{
+	color: tomato;
+}
+p.embeddedness-item-tree{
+	color: maroon;
+}
+#embeddedness-item-tree{
+	color: blue;
+}
