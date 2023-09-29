@@ -1,0 +1,75 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body{
+	font-family: "CormorantGaramond",serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+.title{
+	font-size: 24px;
+	font-family: "Playfair",serif;
+	font-style: normal;
+}
+
+.header-title {
+	font-size: 32px;
+	font-family: "Playfair",serif;
+	font-style: oblique;
+}
+.header-text {
+}
+.header-logo {
+}
+.header-content {
+}
+.content-title {
+	font-size: 20px;
+	font-family: "Playfair",serif;
+	font-style: normal;
+}
+.content-list {
+}
+.content-list-item {
+	font-family:  "CormorantGaramond",serif;
+	font-weight: 300;
+	font-style: italic;
+	color: blue;
+	text-decoration: underline;
+}
+.etymology-container {
+}
+.etymology-title {
+}
+.title {
+}
+.etymology-text {
+}
+.text {
+}
+.history-container {
+}
+.histoty-title {
+}
+.histori-text {
+}
+.histori-img {
+}
+.constituents-container {
+}
+.constituents-title {
+}
+.constituents-text {
+}
+.production-container {
+}
+.production-title {
+}
+.production-text {
+}
+.production-img {
+}
+.footer-title {
+}
+.footer-list {
+}
