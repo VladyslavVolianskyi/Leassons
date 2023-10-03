@@ -1,11 +1,14 @@
+/* Шрифти */
 @import url("fonts.css");
+/* Обнулення */
 @import url("reset.css");
-
+/* Стилі за замовчуванням */
 body{
 	font-family: "CormorantGaramond",serif;
 	font-weight: 500;
 	font-size: 18px;
 }
+/* Стататя про пиво */
 .title{
 	font-size: 24px;
 	font-family: "Playfair",serif;
@@ -13,11 +16,20 @@ body{
 }
 
 .header-title {
+	letter-spacing: 4px;
+	text-align: center;
 	font-size: 32px;
 	font-family: "Playfair",serif;
 	font-style: oblique;
+	text-shadow: 0px 0px 25px #000,0px 0px 25px yellow;
 }
+.header-text-transform{
+	text-transform: uppercase;
+}
+
 .header-text {
+	word-spacing: 15px;
+	line-height: 1.5;
 }
 .header-logo {
 }
@@ -26,7 +38,6 @@ body{
 .content-title {
 	font-size: 20px;
 	font-family: "Playfair",serif;
-	font-style: normal;
 }
 .content-list {
 }
@@ -44,6 +55,8 @@ body{
 .title {
 }
 .etymology-text {
+	text-indent: 30px;
+	white-space: nowrap;
 }
 .text {
 }
@@ -51,7 +64,7 @@ body{
 }
 .histoty-title {
 }
-.histori-text {
+.histori-text{
 }
 .histori-img {
 }
@@ -72,4 +85,67 @@ body{
 .footer-title {
 }
 .footer-list {
+}
+/* Перший блок з домашніх макетів */
+.howe-work {
+}
+.home-work-title {
+	font-size: 48px;
+	text-align: center;
+}
+.home-work-subtitle{
+	font-size: 32px;
+	text-align: center;
+	color: red;
+	font-weight: 700;
+}
+.home-work-page-one-container {
+}
+.home-work-page-one-title {
+color: #37393F;
+font-family: Poppins;
+font-size: 30px;
+font-weight: 600;
+line-height: 1.27;
+}
+.home-work-page-one-text {
+color: #7D7D7D;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.46;
+}
+.home-work-page-one-subtitle {
+color: #6B77E5;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 1.27;
+}
+/* Другий блок з домашніх макетів */
+.home-work-page-two-container {
+}
+.home-work-page-two-title {
+color: #37393F;
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.27;
+}
+.home-work-page-two-text {
+color: #7D7D7D;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.46;
+}
+.home-work-page-two-list {
+color: #7D7D7D;
+font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+line-height: 1.46;
+}
+.page-two-list-item {
 }
