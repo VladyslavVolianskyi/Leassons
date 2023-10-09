@@ -1,0 +1,418 @@
+/* Шрифти */
+@import url("fonts.css");
+/* Обнулення */
+@import url("reset.css");
+/* Стилі за замовчуванням */
+body{
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter",sans-serif;
+}
+span{
+	color: steelblue;
+}
+/* Cтилі шапки */
+.header {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.header-list {
+	text-align: center;
+}
+.header-list .list-item {
+
+	color: blue;
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}
+.header-list .list-item a{
+	text-decoration:underline;
+}
+/* Основні стилі */
+/* Стилі статі */
+.sectoin{
+	margin-left: 15px;
+	margin-bottom: 20px;
+	text-align: justify;
+	max-width: 31.3%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	overflow-y: scroll;
+	max-height: 550px;
+}
+.title{
+	color: #000;
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+/* Стилі шапки статі */
+.artical-header {
+	margin-bottom: 20px;
+}
+.artical-header-title {
+	text-align: center;
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 10px;
+}
+.artical-header-text {
+	padding: 25px;
+}
+.artical-header-meaning {
+	padding: 0px 10px 0px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: steelblue;
+}
+.artical-header-meaning-title{
+	margin-bottom: 3px;
+}
+.list-item {
+	margin-bottom: 5px;
+}
+.list-item-sublist {
+	text-indent: 5px;
+}
+.sublist-item {
+	margin-top:5px;
+}
+/* Основні стилі статті */
+.artical-main {
+	font-size: 0;
+}
+/* Секція перша */
+.section-one-list {
+	text-align: center;
+}
+.text {
+	margin-bottom: 10px;
+}
+/* Секція друга */
+.subsection-title {
+	color: #000;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+/* Футер статті */
+.artical-footer {
+	padding: 20px;
+	color: blue;
+	font-size: 15px;
+}
+.artical-notes {
+	margin-bottom: 20px;
+}
+
+/* Стилі блоку з властивостями */
+.properties{
+	margin-bottom: 30px;
+}
+.properties-title{
+	text-align: center;
+	font-size: 28px;
+	color: #000;
+	margin: 5px;
+}
+.properties-name{
+	text-align: center;
+	font-size: 32px;
+	color: #000;
+	margin-bottom: 15px;
+}
+/* Властивість display */
+.properties-display{
+	margin-bottom: 15px;
+}
+.properties-display-span-indicate {
+	display: inline;
+	color: red;
+}
+.properties-display-block-indicate {
+	display: block;
+	color: orange;
+}
+.properties-display-inline-block-indicate {
+	display: inline-block;
+	color: blue;
+}
+.properties-display-none-indicate {
+	display: none;
+}
+
+/* Властивість margin */
+.properties-margin{
+	margin-bottom: 15px;
+}
+.properties-margin span {
+	color: red;
+	font-size: 20px;
+}
+.properties-margin-all-sides-one-entry {
+	margin: 10px;
+}
+.properties-margin-topbottom-rightleft-sides-one-entry {
+	margin: 10px 5px;
+}
+.properties-margin-top-rightleft-bottop-sides-one-entry {
+	margin: 10px 5px 20px ;
+}
+.properties-margin-top-right-left-bottom-sides-one-entry {
+	margin: 10px 15px 5px 20px;
+}
+.properties-margin-top {
+	margin-top: 10px ;
+}
+.properties-margin-right {
+	margin-right: 10px;
+}
+.properties-margin-bottom {
+	margin-bottom: 10px;
+}
+.properties-margin-left {
+	margin-left: 10px;
+}
+
+/* Властивість padding */
+.properties-padding{
+	margin-bottom: 15px;
+}
+.properties-padding span {
+	color: red;
+	font-size: 20px;
+}
+.properties-padding-all-sides-one-entry {
+	padding: 10px;
+}
+.properties-padding-topbottom-rightleft-sides-one-entry {
+	padding: 10px 5px;
+}
+.properties-padding-top-rightleft-bottop-sides-one-entry {
+	padding: 10px 5px 20px ;
+}
+.properties-padding-top-right-left-bottom-sides-one-entry {
+	padding: 10px 15px 5px 20px;
+}
+.properties-padding-top {
+	padding-top: 10px ;
+}
+.properties-padding-right {
+	padding-right: 10px;
+}
+.properties-padding-bottom {
+	padding-bottom: 10px;
+}
+.properties-padding-left {
+	padding-left: 10px;
+}
+/* Група властивостей widht */
+.properties-widht-group{
+	margin-bottom: 15px;
+	color: orange;
+}
+.properties-widht {
+	width: 300px;
+}
+.properties-min-widht {
+	min-width: 300px;
+}
+.properties-max-widht {
+	max-width: 150px;
+}
+
+/* Група властивостей height */
+.properties-height-group{
+	margin-bottom: 15px;
+	color: rgb(204, 0, 255);
+}
+.properties-height {
+	height: 300px;
+}
+.properties-min-height {
+	min-height: 300px;
+}
+.properties-max-height {
+	max-height: 150px;
+}
+
+/* Властивість overflow */
+.properties-overflow span{
+	color: red;
+	font-size: 24px;
+}
+.properties-overflow-visible-default{
+	height: 300px;
+	margin-bottom: 35px;
+}
+.properties-overflow-hiden-indicate{
+	margin-bottom: 35px;
+	height: 300px;
+	overflow: hidden;
+}
+.properties-overflow-scrol-indicate{
+	height: 300px;
+	overflow: scroll;
+}
+.properties-overflow-auto-indicate{
+	height: 300px;
+	overflow: auto;
+}
+
+
+
+
+
+/* Cтилі макетів із дз */
+
+.homework-title {
+	text-align: center;
+	font-size: 40px;
+	color: #000;
+	margin-bottom: 15px;
+}
+/* Стилі першого макету */
+.task-name{
+	text-align: center;
+	font-size: 36px;
+	color: #000;
+	margin-bottom: 20px;
+}
+.homework-task-one {
+	max-width: 692px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.image {
+	margin-bottom: 37px;
+}
+.benefits-img,.image{
+	max-width: 100%;
+}
+.task-one-title {
+color: #37393F;
+font-family: Poppins;
+font-size: 30px;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 12.5px;
+}
+.task-one-text {
+	line-height: 1.46;
+	margin-bottom: 42px;
+}
+.task-one-subtitle {
+color: #6B77E5;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 12px;
+}
+.task-one-benefits{
+	font-size: 0;
+}
+.benefits-content{
+	max-width: 332px;
+	display: inline-block;
+	margin-left: 29px;
+}
+.benefits-title {
+	color: #37393F;
+font-family: Poppins;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 15px;
+}
+.benefits-subtitle {
+	color: #40DDB6;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 21px;
+}
+.benefits-list {
+	color: #7D7D7D;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.benefits-list-item {
+margin-bottom: 35px;
+}
+
+/* Стилі другого макету */
+
+.homework-task-two {
+	margin-bottom: 10px;
+}
+
+.task-two-wrapper {
+	max-width: 1169px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.task-two-content {
+	display: inline-block;
+	max-width: 563px;
+}
+.two-content-subtitle {
+color: #D06B00;
+font-size: 28px;
+font-weight: 400;
+}
+.two-content-title {
+color: #0E333D;
+font-family: DM Serif Text;
+font-size: 59px;
+line-height: 1.465;
+}
+.two-content-text {
+color: #474747;
+font-size: 20px;
+line-height: 1.80;
+}
+.task-two-img{
+display: inline-block;
+vertical-align: top;
+margin-left: 38px;
+}
+.task-two-img-one{
+	margin-right: 22px;
+	margin-bottom: 15px;
+
+}
+
+
+/* Стилі футера */
+.footer {
+	padding-bottom: 15px;
+}
+.footer-text {
+	margin-bottom: 10px;
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+}
+.footer-link{
+	text-align: center;
+}
+.footer-link a{
+	text-decoration: underline;
+	
+
+}
+
+
+
+
+
