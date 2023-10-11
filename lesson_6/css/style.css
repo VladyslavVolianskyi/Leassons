@@ -31,6 +31,9 @@ span{
 	text-decoration:underline;
 }
 /* Основні стилі */
+.main{
+	margin-bottom: 15px;
+}
 /* Стилі статі */
 .sectoin{
 	margin-left: 15px;
@@ -351,17 +354,13 @@ margin-bottom: 35px;
 }
 
 /* Стилі другого макету */
-
-.homework-task-two {
-	margin-bottom: 10px;
-}
-
 .task-two-wrapper {
 	max-width: 1169px;
 	margin: 0 auto;
 	font-size: 0;
 }
 .task-two-content {
+	padding: 21px 0px;
 	display: inline-block;
 	max-width: 563px;
 }
@@ -372,7 +371,7 @@ font-weight: 400;
 }
 .two-content-title {
 color: #0E333D;
-font-family: DM Serif Text;
+font-family: "DM Serif Text";
 font-size: 59px;
 line-height: 1.465;
 }
@@ -388,8 +387,6 @@ margin-left: 38px;
 }
 .task-two-img-one{
 	margin-right: 22px;
-	margin-bottom: 15px;
-
 }
 
 
