@@ -1,0 +1,116 @@
+/* Шрифти */
+@import url("fonts.css");
+/* Обнулення */
+@import url("reset.css");
+/* Стилі за замовчуванням */
+body{
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter",sans-serif;
+}
+body > * {
+	margin-bottom: 20px;
+}
+
+.section-title {
+	margin: 0 auto 10px;
+	font-size: 26px;
+	border-radius: 30px;
+	padding: 5px 10px;
+	text-align: center;
+	max-width: 300px;
+	border: 3px solid rgb(89, 0, 255);
+	color: #000;
+}
+[class*="-text"]{
+	line-height: 1.2;
+}
+/* Стилі шапки */
+.one-section-header {
+	padding-top: 45px;
+	margin-bottom: 55px;
+}
+.one-section-list {
+	text-align: center;
+}
+.one-section-list-item {
+	border-bottom: 3px dotted blue;
+	font-size: 20px;
+	display: inline-block;
+	margin-left: 25px;
+}
+.two-section-header {
+	padding: 20px;
+	outline: 4px solid blue;
+	font-size: 60px;
+	text-align: center;
+}
+/* Стилі основного блоку */
+.main > div {
+	margin-bottom: 15px;
+}
+/* Стилі статті */
+.main-artical {
+	padding: 15px;
+	border: 3px solid green;
+}
+.main-artical > div{
+	margin-bottom: 15px;
+}
+/* Стилі шапки статті */
+
+.artical-header-title {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 40px;
+	color: rgb(41, 29, 29);
+}
+.artical-header-text {
+	margin-bottom: 15px;
+}
+.artical-header-meaning {
+	padding: 10px;
+	max-width: 250px;
+	border: 1px solid skyblue;
+}
+.artical-header-meaning-title {
+	text-align: center;
+}
+.artical-header-meaning-list {
+	font-size: 14px;
+}
+.artical-header-meaning-list-item {
+	text-decoration: underline;
+	color: rgb(0, 102, 255);
+	margin-bottom: 3px;
+}
+.artical-header-meaning-list-sublist {
+	text-indent: 5px;
+	margin-top: 3px;
+}
+/* Ocновні стилі в статті */
+.section-subtitle {
+	font-size: 22px;
+	color: #000;
+	font-weight: 500;
+	padding-left: 5px;
+	margin-bottom: 4px;
+}
+/* Cтилі блоку класифікації */
+.section-classification-list {
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+.classification-list-item {
+	line-height: 1.2;
+}
+.section-classification-text{
+	padding-left: 15px;
+}
+
+/* Стилі блоку води України */
+.section-water-ukraine-title {
+	max-width: 350px;
+}
+
+
