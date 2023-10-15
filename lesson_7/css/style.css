@@ -287,9 +287,12 @@ body > * {
 	color: #000;
 	margin-bottom: 25px
 }
-.homework-maket-one-contaiter {
+[class*="-container"]{
+	margin: 0 auto 100px;
+}
+/* Макет 1 */
+.homework-maket-one-container {
 	max-width: 1218px;
-	margin: 0 auto;
 }
 .maket-one-title-container{
 	text-align: center;
@@ -358,3 +361,162 @@ margin-bottom: 8px;
 .maket-one-section-three {
 	margin-bottom: 100px;
 }
+/* Макет 2 */
+.homework-maket-two-container {
+	max-width: 830px;
+}
+.maket-two-title {
+	color: #37393F;
+font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+line-height: 1.27;
+margin-bottom: 58px;
+}
+.maket-two-text {
+	line-height: 1.46187;
+	margin-bottom: 35px;
+}
+.maket-two-text p{
+	margin-bottom: 35px;
+}
+.maket-two-list {
+	font-weight: 500;
+line-height: 1.46187;
+margin-bottom: 35px;
+margin-left: 16px;
+}
+.maket-two-list-item {
+	margin-bottom: 35px;
+}
+/* Макет 3 */
+.homework-maket-three-container {
+	max-width: 1240px;
+	
+}
+.maket-three-title-container {
+	font-size: 0;
+	margin: 0 0 30px 0;
+}
+.maket-three-title-decoration {
+	display: inline-block;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8A33FD;
+	vertical-align: top;
+}
+.maket-three-title {
+	color: #3C4242;
+font-family: "Core Sans C",sans-serif;
+font-size: 28px;
+font-weight: 600;
+line-height: 1.11;
+letter-spacing: 0.56px;
+display: inline-block;
+margin-left: 15px;
+vertical-align: top;
+}
+.maket-three-subtitle {
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-left: 21px;
+	margin-bottom: 25px;
+}
+.maket-three-text {
+color: #807D7E;
+font-family: "Causten";
+font-size: 20px;
+font-weight: 400;
+line-height: 1.67;
+letter-spacing: 0.4px;
+	margin-left: 21px;
+	margin-bottom: 25px;
+}
+.maket-three-text p {
+	
+	margin-bottom: 20px;
+}
+.maket-three-text span{
+	font-weight: 700;
+}
+/* Макет 4 */
+.homework-maket-four-container {
+	text-align: center;
+	max-width: 1600px;
+}
+.maket-four-content {
+	display: inline-block;
+	max-width: 503px;
+	font-size: 0;
+	vertical-align: middle;
+	margin-right: 75px;
+}
+.maket-four-subtitle {
+	color: #D58417;
+	font-family: 'Cormorant Infant';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 27px;
+}
+.maket-four-title {
+	color: #000;
+	font-family: 'Cormorant Infant';
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	text-align-last: left;
+	margin-bottom: 31px;
+}
+.maket-four-text {
+	color: #606060;
+font-family: 'Cormorant Infant';
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.40;
+text-align: left;
+}
+.maket-four-img {
+	display: inline-block;
+}
+.img-contaiter {
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid black;
+	border-radius:235px;
+	margin-left: 20px;
+}
+.img-contaiter img{
+	border-radius: 235px;
+	
+}
+.one-img img {
+	margin: 14px 10px -14px -10px;
+}
+.two-img img {
+	margin: 19px 11px -13px -10px;
+}
+/* Стилі футера */
+.footer {
+	padding-bottom: 15px;
+}
+.footer-text {
+	margin-bottom: 10px;
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+}
+.footer-link{
+	text-align: center;
+}
+.footer-link a{
+	text-decoration: underline;
+}
+
