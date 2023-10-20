@@ -296,7 +296,7 @@ body > * {
 }
 .maket-one-title-container{
 	text-align: center;
-	max-width: 296px;
+	max-width: 600px;
 	margin: 0 auto 70px;
 	font-size: 0;
 }
@@ -305,6 +305,9 @@ body > * {
 	height: 12px;
 	background: #40DDB6;
 	display: inline-block;
+}
+.maket-one-subtitle-container{
+	margin-bottom: 0;
 }
 .maket-one-subtitle {
 	color: #37393F;
@@ -322,10 +325,10 @@ font-weight: 700;
 line-height: 1.21;
 font-family: "Poppins",sans-serif;
 }
-.maket-one-section-one {
+.maket-one-section {
 	margin-bottom: 100px;
 }
-.maket-one-section-one .maket-one-section-text{
+.maket-one-section-text.margin-bottom{
 	margin-bottom: 32px;
 }
 .maket-one-section-title {
@@ -352,14 +355,8 @@ margin-bottom: 8px;
 .maket-one-section-subtitle .maket-one-decoration-text{
 	font-weight: 400;
 }
-.maket-one-section-two {
-	margin-bottom: 100px;
-}
-.maket-one-section-two .maket-one-section-text{
+.maket-one-section-text{
 	margin-bottom: 24px;
-}
-.maket-one-section-three {
-	margin-bottom: 100px;
 }
 /* Макет 2 */
 .homework-maket-two-container {
@@ -384,7 +381,7 @@ margin-bottom: 58px;
 	font-weight: 500;
 line-height: 1.46187;
 margin-bottom: 35px;
-margin-left: 16px;
+padding-left: 16px;
 }
 .maket-two-list-item {
 	margin-bottom: 35px;
@@ -417,6 +414,10 @@ display: inline-block;
 margin-left: 15px;
 vertical-align: top;
 }
+.maket-three-content-container{
+	padding-left: 21px;
+	margin: 0;
+}
 .maket-three-subtitle {
 	color: #807D7E;
 	font-family: "Core Sans C";
@@ -424,7 +425,6 @@ vertical-align: top;
 	font-weight: 600;
 	line-height: 1.67;
 	letter-spacing: 0.4px;
-	margin-left: 21px;
 	margin-bottom: 25px;
 }
 .maket-three-text {
@@ -434,7 +434,6 @@ font-size: 20px;
 font-weight: 400;
 line-height: 1.67;
 letter-spacing: 0.4px;
-	margin-left: 21px;
 	margin-bottom: 25px;
 }
 .maket-three-text p {
@@ -446,8 +445,8 @@ letter-spacing: 0.4px;
 }
 /* Макет 4 */
 .homework-maket-four-container {
-	text-align: center;
-	max-width: 1600px;
+	margin: 0 auto 100px;
+	max-width: 1200px;
 }
 .maket-four-content {
 	display: inline-block;
@@ -497,10 +496,18 @@ text-align: left;
 	border-radius: 235px;
 	
 }
+.one-img{
+	max-width: 177px;
+}
+.two-img{
+	max-width: 307px;
+}
 .one-img img {
+	width: 100%;
 	margin: 14px 10px -14px -10px;
 }
 .two-img img {
+	width: 100%;
 	margin: 19px 11px -13px -10px;
 }
 /* Стилі футера */
