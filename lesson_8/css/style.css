@@ -1,0 +1,169 @@
+/* Шрифти */
+@import url("fonts.css");
+/* Обнулення */
+@import url("reset.css");
+/* Стилі за замовчуванням */
+body{
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter",sans-serif;
+}
+/* Стилі шапки */
+.header{
+	margin-bottom: 30px;
+}
+.one-section-header {
+	padding-top: 45px;
+	margin-bottom: 55px;
+}
+.one-section-list {
+	text-align: center;
+}
+.one-section-list-item {
+	border-bottom: 3px dotted blue;
+	font-size: 20px;
+	display: inline-block;
+	margin-left: 25px;
+}
+.two-section-header {
+	padding: 20px;
+	outline: 4px solid blue;
+	font-size: 60px;
+	text-align: center;
+}
+/* Cтилі навчальної верстки */
+/* Загальні стилі блоку */
+.main {
+	padding-bottom: 100px;
+}
+.layout {
+	font-family: Inika;
+font-size: 16px;
+font-weight: 400;
+	color: #fff;
+	margin: 0 auto;
+	max-width: 1536px;
+	background: url(../img/BG.png) 0 0 / cover no-repeat;
+}
+.layout-container {
+	margin: 0 auto;
+	max-width: 1350px;
+	padding: 32px 81px 121px;
+	
+}
+/* Стилі шапки блоку навчальної верстки */
+.layout-header {
+	margin-bottom: 9px;
+}
+.header-logo {
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 21px;
+}
+.header-logo img{
+	border-radius: 19px;
+}
+.header-menu {
+	display: inline-block;
+	margin-left: 49px;
+	
+}
+.header-menu-list {
+
+
+}
+.header-menu-list-item {
+	margin-right: 52px;
+	display: inline-block;
+}
+
+.header-decoration-line {
+	background: rgba(225, 225, 225, 0.30);
+	height: 4px;
+	margin-bottom: 11px;
+}
+.header-label {
+	color: rgba(255, 255, 255, 0.60);
+font-family: Inika;
+font-size: 16px;
+font-weight: 400;
+text-align: right;
+}
+.label-decor {
+	color: #FFF;
+	font-weight: 700;
+}
+/* Стилі основного блоку навчальної верстки */
+.layout-main {
+	
+}
+/* Стилі першої секції */
+.one-section {
+	margin-bottom: 51px;
+	font-size: 0;
+}
+.one-section-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.one-section-title {
+		color: rgba(255, 255, 255, 0.72);
+	font-size: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.one-section-label {
+	font-family: Inter;
+font-size: 40px;
+font-style: italic;
+font-weight: 700;
+background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Стилі другої секції*/
+.two-section {
+	margin-bottom: 39px;
+}
+.two-section-button {
+	max-width: 236px;
+	border-radius: 8px;
+	background: #4AA7F9;
+	padding:  23px 14px 23px 15px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+.two-section-text {
+	font-size: 18px;
+	margin-bottom: 52px;
+}
+.two-section-label{
+	max-width: 158px;
+	max-height: 78px;
+	color: #FFF;
+font-family: "Baloo Bhai 2";
+font-size: 40px;
+font-weight: 400;
+line-height: 0.75;
+}
+.two-section-label-decor{
+	font-size: 16px;
+}
+/* Стилі футера навчальної верстки  */
+.layout-footer {
+}
+.layout-footer-list {
+	max-width: 709px;
+	background: rgba(0, 0, 0, 0.42);
+	padding: 25px;
+}
+.layout-footer-list-item{
+display: inline-block;
+color: #FFF8F8;
+font-size: 18px;
+margin-left: 17px;
+}
+
