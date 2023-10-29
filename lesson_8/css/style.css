@@ -31,6 +31,15 @@ body{
 	font-size: 60px;
 	text-align: center;
 }
+/* Стилі основного блоку */
+.main-block-name{
+	text-align: center;
+	font-size: 36px;
+	margin: 0 auto 20px;
+	border: 3px double red;
+	max-width: 250px;
+	padding: 3px;
+}
 /* Cтилі навчальної верстки */
 /* Загальні стилі блоку */
 .main {
@@ -165,5 +174,106 @@ display: inline-block;
 color: #FFF8F8;
 font-size: 18px;
 margin-left: 17px;
+}
+/* Блок домашнього завдання */
+.main-homework {
+	border: 3px solid red;
+	padding: 5px;
+}
+.homework-number {
+	text-align: center;
+	font-size: 32px;
+	color: #000;
+	margin-bottom: 25px
+}
+[class*="-container"]{
+	margin: 0 auto 100px;
+}
+/* Макет перший */
+.maket-one-container {
+	max-width: 673px;
+}
+.maket-one-laybel-container {
+	margin: 0 0 16px 0;
+}
+.laybel-decor {
+	width: 12px;
+height: 12px;
+background: #40DDB6;
+display: inline-block;
+}
+.maket-one-laybel {
+	display: inline-block;
+	color: #37393F;
+	font-weight: 500;
+}
+.maket-one-title {
+	color: #37393F;
+font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+line-height: 1.21;
+max-width: 413px;
+margin-bottom: 20px;
+}
+.maket-one-text {
+	line-height: 1.4618;
+	margin-bottom: 20px;
+}
+.maket-one-text p {
+	margin-bottom: 15px;
+}
+.maket-one-list {
+	margin-bottom: 43px;
+}
+.maket-one-list li {
+	background: url(../img/icon/list=decor.svg) 0 3px no-repeat;
+	color: #37393F;
+font-family: Poppins;
+font-size: 20px;
+padding-left: 35px;
+line-height: 1.5;
+margin-bottom: 23px;
+}
+.maket-one-advantages-container {
+	font-size: 0;
+	margin: 0 0 37px 0;
+}
+.advantages-one {
+	border: 1px solid #E3E3E3;
+	padding: 32px 32px 32px 90px;
+	max-width: 295px;
+	display: inline-block;
+	background: url(../img/icon/advantages-one.svg) 32px 31px no-repeat;
+}
+.advantages-two {
+	border: 1px solid #E3E3E3;
+	padding: 32px 37px 32px 94px;
+	max-width: 297px;
+	display: inline-block;
+	background: url(../img/icon/advantages-two.svg) 37px 31px no-repeat;
+}
+.advantages-title {
+	color: #37393F;
+font-family: "Poppins";
+font-size: 20px;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 3px;
+
+}
+.advantages-text {
+	font-size: 16px;
+line-height: 1.3518;
+}
+.maket-one-button {
+	padding: 21px 27px;
+	max-width: 184px;
+	background: #6B77E5;
+	color: #FFF;
+text-align: center;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
 }
 
