@@ -43,7 +43,6 @@ body{
 /* Cтилі навчальної верстки */
 /* Загальні стилі блоку */
 .main {
-	padding-bottom: 100px;
 }
 .layout {
 	font-family: Inika;
@@ -202,19 +201,23 @@ height: 12px;
 background: #40DDB6;
 display: inline-block;
 }
-.maket-one-laybel {
+.maket-laybel {
 	display: inline-block;
 	color: #37393F;
 	font-weight: 500;
 }
 .maket-one-title {
+	
+max-width: 413px;
+margin-bottom: 20px;
+}
+.maket-title{
 	color: #37393F;
 font-family: Poppins;
 font-size: 40px;
 font-weight: 700;
 line-height: 1.21;
-max-width: 413px;
-margin-bottom: 20px;
+
 }
 .maket-one-text {
 	line-height: 1.4618;
@@ -276,4 +279,190 @@ font-weight: 600;
 line-height: normal;
 text-transform: capitalize;
 }
+/* Макет два */
+.maket-two-container {
+	margin: 0 auto;
+}
+.maket-two-laybel-container {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 14px;
+}
+.maket-two-title { 
+	text-align: center;
+	margin-bottom: 14px;
+}
+.maket-title {
+}
+.maket-two-text {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 852px;
+	margin-bottom: 47px;
+}
+.maket-two-cards-container {
+	max-width: 1254px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.maket-two-card {
+	max-width: 384px;
+	display: inline-block;
+	margin-right: 34px;
+}
+.card-image {
+	width: 384px;
+	height: 501px;
+	margin-bottom: 24px;
+}
+.card-info {
+	margin-bottom: 58px;
+}
+.card-title {
+	color: #37393F;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 10px;
+}
+.card-data {
+	padding-left: 23.35px;
+	background: url(../img/icon/date-image.svg) 0 0 no-repeat;
+	color: #7D7D7D;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.58;
+}
+.card-one {
+	background: url(../img/maket-two-card-one.png) 0 0 no-repeat;
+}
+.card-two {
+	background: url(../img/maket-two-card-two.png) 0 0 no-repeat;
+}
+.card-three {
+	background: url(../img/maket-two-card-three.png) 0 0 no-repeat;
+}
+.card-four {
+	background: url(../img/maket-two-card-four.png) 0 0 no-repeat;
+}
+.card-five {
+	background: url(../img/maket-two-card-five.png) 0 0 no-repeat;
+}
+.card-six {
+	background: url(../img/maket-two-card-six.png) 0 0 no-repeat;
+}
+
+/* Макет три */
+.maket-three-container{
+	max-width: 1240px;
+}
+.maket-three-title-container {
+	margin: 0 0 30px 0;
+}
+.title-decor {
+	display: inline-block;
+	width: 6px;
+height: 28px;
+border-radius: 10px;
+background: #8A33FD;
+margin-right: 15px;
+}
+.maket-three-title {
+	display: inline-block;
+	color: #3C4242;
+font-family: "Core Sans C";
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.1;
+letter-spacing: 0.56px;
+vertical-align: top;
+}
+.maket-three-content-container {
+	margin: 0;
+	padding-left: 21px;
+}
+.maket-three-subtitle {
+	color: #807D7E;
+font-family:" Core Sans C";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.675;
+letter-spacing: 0.4px;
+margin-bottom: 25px;
+}
+
+.maket-three-text {
+	margin-bottom: 20px;
+	color: #807D7E;
+font-family: Causten;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.675;
+letter-spacing: 0.4px;;
+}
+.margin{
+	margin-bottom: 25px;
+}
+.maket-three-text p{
+	margin-bottom: 20px;
+}
+.maker-three-link {
+	color: #807D7E;
+font-family: "Core Sans C";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.675;
+letter-spacing: 0.4px;
+}
+.maket-three-decor{
+	font-weight: 700;
+}
+/* Четвертий макет */
+.maket-four-container {
+	padding: 183px 74px 174px;
+	max-width: 1240px;
+	background: url(../img/bg-maket-four-two.png) 0 0 / 50% 100% no-repeat,
+	url(../img/bg-maket-four.png) right top / 50% 100% no-repeat;
+}
+.maket-four-content{
+	max-width: 466px;
+}
+.maket-four-title {
+	color: #FFF;
+font-family: "Core Sans C";
+font-size: 34px;
+font-weight: 800;
+line-height: 1.47;
+letter-spacing: 0.208px;
+margin-bottom: 30px;
+}
+.maket-four-text {
+	color: #FFF;
+font-family: "Causten";
+font-size: 20px;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1px;
+margin-bottom: 50px;
+}
+.maket-four-button {
+	max-width: 168px;
+	border-radius: 8px;
+background: #FFF;
+padding: 12px 44px;
+color: #3C4242;
+text-align: center;
+font-family: "Causten";
+font-size: 18px;
+font-weight: 600;
+line-height: normal;
+}
+
 
