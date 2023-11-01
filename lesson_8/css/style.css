@@ -46,6 +46,7 @@ body{
 /* Cтилі навчальної верстки */
 /* Загальні стилі блоку */
 .main {
+	margin-bottom: 30px;
 }
 .layout {
 	font-family: Inika;
@@ -606,6 +607,7 @@ letter-spacing: 0.4px;
 	max-width: 1240px;
 	background: url(../img/bg-maket-four-two.png) 0 0 / 50% 100% no-repeat,
 	url(../img/bg-maket-four.png) right top / 50% 100% no-repeat;
+	margin: 0 auto;
 }
 .maket-four-content{
 	max-width: 466px;
@@ -640,5 +642,20 @@ font-size: 18px;
 font-weight: 600;
 line-height: normal;
 }
-
+/* Стилі футера */
+.footer {
+	padding-bottom: 15px;
+}
+.footer-text {
+	margin-bottom: 10px;
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+}
+.footer-link{
+	text-align: center;
+}
+.footer-link a{
+	text-decoration: underline;
+}
 
