@@ -31,6 +31,9 @@ body{
 	font-size: 60px;
 	text-align: center;
 }
+[class*="-container"]{
+	margin: 0 auto 100px;
+}
 /* Стилі основного блоку */
 .main-block-name{
 	text-align: center;
@@ -49,7 +52,7 @@ body{
 font-size: 16px;
 font-weight: 400;
 	color: #fff;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	max-width: 1536px;
 	background: url(../img/BG.png) 0 0 / cover no-repeat;
 }
@@ -174,7 +177,117 @@ color: #FFF8F8;
 font-size: 18px;
 margin-left: 17px;
 }
-/* Блок домашнього завдання */
+/* Блок властивостей */
+/* Всластивість backgroung */
+.properties {
+	max-width: 1200px;
+	margin: 0 auto 100px;
+}
+.contain{
+	max-width: 300px;
+	min-height: 100px;
+	border: 1px solid silver;
+}
+.properties-title {
+	color: #000;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 42px;
+	padding: 5px;
+	border: 1px dashed red;
+	max-width: 500px;
+	border-radius: 25px;
+	margin: 0 auto 40px;
+}
+.title-proterties {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.properties-name{
+	max-width: 250px;
+	color: #000;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.properties-container {
+	display: inline-block;
+	margin: 0px 35px 0px 0px;
+}
+.properties-bacground{
+	margin-bottom: 40px;
+}
+
+.backgroud-color {
+	background-color: green;
+}
+.backgroud-img {
+	background-image: url(../img/training-bg.png);
+}
+.backgroud-linear-gradient {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.backgroud-radial-gradient {
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+/* Властивість background-repeat */
+.properties-bacground-repeat {
+}
+
+.proterties-container {
+}
+.properties-name {
+}
+.backgroud-repeat-repeat {
+	background-image: url(../img/icon/list=decor.svg);
+}
+.backgroud-repeat-no-repeat {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+}
+.backgroud-repeat-repeat-x {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: repeat-x;
+}
+.backgroud-repeat-repeat-y {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: repeat-y;
+}
+/* Властивість background-position */
+
+.backgroud-position-0-0 {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+}
+.backgroud-position-center {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.backgroud-position-right-top {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.backgroud-position-right-bottom {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.backgroud-position-left-bottom {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+	background-position: left bottom ;
+}
+.backgroud-position-value-px {
+	background-image: url(../img/icon/list=decor.svg);
+	background-repeat: no-repeat;
+	background-position: 70px 25px;
+}
+
+/* Блок домашнього завдання макетів*/
 .main-homework {
 	border: 3px solid red;
 	padding: 5px;
@@ -184,9 +297,6 @@ margin-left: 17px;
 	font-size: 32px;
 	color: #000;
 	margin-bottom: 25px
-}
-[class*="-container"]{
-	margin: 0 auto 100px;
 }
 /* Макет перший */
 .maket-one-container {
