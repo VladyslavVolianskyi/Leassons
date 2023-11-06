@@ -54,7 +54,6 @@ font-size: 16px;
 font-weight: 400;
 	color: #fff;
 	margin: 0 auto 100px;
-	max-width: 1536px;
 	background: url(../img/BG.png) 0 0 / cover no-repeat;
 }
 .layout-container {
@@ -139,14 +138,16 @@ background-clip: text;
 .two-section {
 	margin-bottom: 39px;
 }
-.two-section-button {
+
+.two-section-button a{
 	max-width: 236px;
-	border-radius: 8px;
-	background: #4AA7F9;
-	padding:  23px 14px 23px 15px;
 	font-size: 18px;
 	font-weight: 700;
 	margin-bottom: 16px;
+	background: #4AA7F9;
+	display: inline-block;
+	padding:  23px 14px 23px 15px;
+	border-radius: 8px;
 }
 .two-section-text {
 	font-size: 18px;
@@ -446,7 +447,8 @@ margin-bottom: 3px;
 	font-size: 16px;
 line-height: 1.3518;
 }
-.maket-one-button {
+.maket-one-button a {
+	display: inline-block;
 	padding: 21px 27px;
 	max-width: 184px;
 	background: #6B77E5;
@@ -456,6 +458,7 @@ font-weight: 600;
 line-height: normal;
 text-transform: capitalize;
 }
+
 /* Макет два */
 .maket-two-container {
 	margin: 0 auto;
@@ -483,18 +486,17 @@ text-transform: capitalize;
 	font-size: 0;
 }
 .maket-two-card {
+	width: 100%;
 	max-width: 384px;
 	display: inline-block;
 	margin-right: 34px;
+	margin-bottom: 58px;
 }
 .card-image {
-	width: 384px;
 	height: 501px;
 	margin-bottom: 24px;
 }
-.card-info {
-	margin-bottom: 58px;
-}
+
 .card-title {
 	color: #37393F;
 font-family: Poppins;
@@ -514,22 +516,22 @@ font-weight: 400;
 line-height: 1.58;
 }
 .card-one {
-	background: url(../img/maket-two-card-one.png) 0 0 no-repeat;
+	background: url(../img/maket-two-card-one.png) center / cover no-repeat;
 }
 .card-two {
-	background: url(../img/maket-two-card-two.png) 0 0 no-repeat;
+	background: url(../img/maket-two-card-two.png) center / cover no-repeat;
 }
 .card-three {
-	background: url(../img/maket-two-card-three.png) 0 0 no-repeat;
+	background: url(../img/maket-two-card-three.png) center / cover no-repeat;
 }
 .card-four {
-	background: url(../img/maket-two-card-four.png) 0 0 no-repeat;
+	background: url(../img/maket-two-card-four.png) center / cover no-repeat;
 }
 .card-five {
-	background: url(../img/maket-two-card-five.png) 0 0 no-repeat;
+	background: url(../img/maket-two-card-five.png) center / cover no-repeat;
 }
 .card-six {
-	background: url(../img/maket-two-card-six.png) 0 0 no-repeat;
+	background: url(../img/maket-two-card-six.png) center / cover no-repeat;
 }
 
 /* Макет три */
@@ -603,14 +605,34 @@ letter-spacing: 0.4px;
 }
 /* Четвертий макет */
 .maket-four-container {
-	padding: 183px 74px 174px;
+	font-size: 0;
+	/* padding: 183px 74px 174px; */
 	max-width: 1240px;
-	background: url(../img/bg-maket-four-two.png) 0 0 / 50% 100% no-repeat,
-	url(../img/bg-maket-four.png) right top / 50% 100% no-repeat;
+	height: 100%;
+	/* background: url(../img/bg-maket-four-two.png) 0 0 / 50% 100% no-repeat,
+	url(../img/bg-maket-four.png) right top / 50% 100% no-repeat; */
 	margin: 0 auto;
 }
 .maket-four-content{
+	font-size: 18px;
 	max-width: 466px;
+}
+.hidden{
+	visibility: hidden;
+}
+.maket-four-left{
+	display: inline-block;
+	padding: 183px 74px 174px;
+	width: 50%;
+	background: url(../img/bg-maket-four-two.png) center / cover no-repeat;
+}
+.maket-four-right{
+	padding: 183px 74px 174px;
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	height: 100%;
+	background: url(../img/bg-maket-four.png) center/ cover no-repeat;
 }
 .maket-four-title {
 	color: #FFF;
@@ -630,7 +652,8 @@ line-height: normal;
 letter-spacing: 1px;
 margin-bottom: 50px;
 }
-.maket-four-button {
+.maket-four-button a {
+	display: inline-block;
 	max-width: 168px;
 	border-radius: 8px;
 background: #FFF;
