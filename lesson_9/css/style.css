@@ -1,0 +1,229 @@
+/* Шрифти */
+@import url("fonts.css");
+/* Обнулення */
+@import url("reset.css");
+/* Стилі за замовчуванням */
+body{
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter",sans-serif;
+	background: url(../img/repeat.jpg);
+}
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Стилі шапки */
+.header {
+	font-size: 24px;
+	color: rgb(8, 218, 26);
+	margin-bottom: 40px;
+}
+.header-menu {
+	padding: 15px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.menu-item {
+	display: inline-block;
+	padding: 3px 4px;
+	border-radius: 7px;
+	text-shadow: 0px 0px 3px black;
+}
+.menu-item:hover a{
+	text-decoration: underline;
+}
+.header-menu >*:not(:first-child){
+	margin-left: 10px;
+}
+
+/* Гра */
+.game {
+	font-size: 0;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 450px;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 9px rgb(8, 218, 26);
+}
+.game-title{
+	text-align: center;
+	font-size: 30px;
+	color: rgb(2, 11, 245);
+	margin-bottom: 25px;
+}
+
+.game-line-one {
+	width: 30px;
+	height: 40px;
+	background-color:rgb(8, 218, 26);
+	border-radius: 10px 10px 0 0;
+}
+.game-line-two {
+	display: inline-block;
+	width: 95%;
+	height: 40px;
+	background-color:  rgb(8, 218, 26);
+	border-radius: 0 0px 0px 10px;
+	visibility: hidden;
+	opacity: 0;
+}
+.game-line-two.start{
+	display: inline-block;
+	width: 4%;
+	height: 40px;
+	background-color:rgb(8, 218, 26);
+	border-radius: 0 10px 0 0;
+	visibility: hidden;
+	opacity: 0;
+}
+/* Поява другої лінії */
+.game-line-one:hover ~ .game-line-two,.game-line-two:hover,.game-line-two:hover + .game-line-two{
+	visibility:visible;
+	opacity: 1;
+}
+
+.game-line-three {
+	display: inline-block;
+	width: 95%;
+	height: 30px;
+	background-color: rgb(0,0,0);
+	visibility: hidden;
+	opacity: 0;
+}
+.game-line-three.start{
+	display: inline-block;
+	width: 4%;
+	height: 30px;
+	background-color: rgb(8, 218, 26);
+}
+/* Поява третьої лінії */
+.game-line-two.start:hover ~ .game-line-three.start,.game-line-three:hover{
+	visibility: visible;
+	opacity: 1;
+}
+
+.game-line-four-one {
+	display: inline-block;
+	width: 45%;
+	height: 20px;
+	background-color: rgb(0,0,0);
+	vertical-align: top;
+	visibility: hidden;
+	opacity: 0;
+}
+.game-line-four.start{
+	display: inline-block;
+	width: 10%;
+	height: 20px;
+	background-color: rgb(8, 218, 26);
+	border-radius: 10px 0 0 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.game-line-four.two {
+	display: inline-block;
+	width: 54%;
+	height: 20px;
+	background-color: rgb(8, 218, 26);
+	border-radius: 10px 0 10px 0;
+	visibility: hidden;
+	opacity: 0;
+}
+/* Поява четвертої лінії */
+.game-line-three.start:hover ~.game-line-four,.game-line-four:hover,.game-line-four:hover > .game-line-four.start{
+	visibility: visible;
+	opacity: 1;
+}
+
+.game-line-five {
+	display: inline-block;
+	width: 10px;
+	height: 170px;
+	background-color:  rgb(8, 218, 26);
+	visibility: hidden;
+	opacity: 0;
+}
+.game-line-five.start{
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	background-color:  rgb(8, 218, 26);
+	visibility: hidden;
+	opacity: 0;
+}
+.game-line-five-one {
+	display: inline-block;
+	width: 10px;
+	height: 150px;
+	background-color: rgb(0,0,0);
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* Поява п'ятої лінії */
+.game-line-four.start:hover ~ .game-line-five,.game-line-five:hover,.game-line-five:hover .game-line-five.start{
+	visibility: visible;
+	opacity: 1;
+}
+.finish{
+	color: rgb(8, 218, 26);
+	width: 200px;
+	font-size: 26px;
+	text-shadow: 0px 1px 1px black;
+	margin-left:-20px;
+	background-color: blue;
+	padding: 3px 6px;
+	border-radius: 7px;
+	visibility: hidden;
+	opacity: 0;
+	margin-bottom: 5px;
+}
+.finish:hover{
+	text-decoration: underline;
+	
+}
+/* Поява кнопки */
+.game-line-five.start:hover ~ .finish,.finish:hover{
+	visibility: visible;
+	opacity: 1;
+
+}
+
+.title-win{
+	text-align: center;
+	font-size: 30px;
+	color:rgb(8, 218, 26);
+	margin-bottom: 25px;
+	margin-left: -5%;
+	display: none;
+}
+.title-win:target{
+	display: block;
+}
+.title-win:target ~ .game-title{
+	display: none;
+}
+.title-win:target ~ .game-line-two,.title-win:target ~ .game-line-three.start,.title-win:target ~ .game-line-four.two,.title-win:target ~ .game-line-four.two .game-line-five,.title-win:target ~ .game-line-four.two .finish{
+	visibility:visible;
+	opacity: 1;
+}
+
+.title-win:target ~ .game-line-four.two .game-line-five .reset{
+	display: block;
+}
+
+.reset{
+	color: rgb(8, 218, 26);
+	width: 130px;
+	font-size: 26px;
+	text-shadow: 0px 1px 1px #000;
+	margin-left:-20px;
+	background-color: rgb(255, 0, 0);
+	padding: 3px 6px;
+	border-radius: 7px;
+	display: none;
+}
+.reset:hover{
+	text-decoration: underline;
+}
