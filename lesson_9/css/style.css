@@ -45,6 +45,7 @@ body{
 	height: 450px;
 	border-radius: 20px;
 	box-shadow: inset 0px 0px 9px rgb(8, 218, 26);
+	margin-bottom: 50px;
 }
 .game-title{
 	text-align: center;
@@ -226,4 +227,94 @@ body{
 }
 .reset:hover{
 	text-decoration: underline;
+}
+
+/* Блок домашніх макетів */
+.homework{
+
+}
+/* Макет 1 */
+.maket-one {
+	background-color: white;
+	max-width: 732px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.maket-one >*:last-child{
+	margin-bottom: 0;
+}
+.maket-one-title {
+	color: #37393F;
+font-family: "Poppins";
+font-size: 30px;
+font-weight: 600;
+line-height: 127%;
+margin-bottom: 3px;
+}
+.maket-one-text {
+	margin-bottom: 42px;
+	line-height: 1.46187;
+}
+.maket-one-subtitle{
+color: #6B77E5;
+font-family: "Poppins";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.27; 
+margin-bottom: 12px;
+}
+.maket-one-subtitle + .maket-one-text{
+	margin-bottom: 40px;
+}
+.benefits {
+	font-size: 0;
+	margin-bottom: 50px;
+}
+.benefits-image {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+.benefits-content {
+	display: inline-block;
+	max-width: 332px;
+	margin-left: 29px;
+}
+.benefits-title {
+	color: #37393F;
+font-family: "Poppins";
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 15px;
+}
+.benefits-subtitle {
+	color: #40DDB6;
+font-family: "Poppins";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 21px;
+}
+.benefits-list {
+font-size: 18px;
+line-height: normal;
+}
+.benefits-list li::before{
+	content: "";
+	background: url(../img/benefits-icon-list.svg) 0 0 no-repeat;
+	width: 27px;
+	height: 28px;
+	display: inline-block;
+	margin-right: 2.5px;
+	margin-bottom: -8px;
+}
+.benefits-list li:not(:last-child){
+	margin-bottom: 30px;
+}
+.benefits + .maket-one-title{
+	margin-bottom: 4px;
 }
