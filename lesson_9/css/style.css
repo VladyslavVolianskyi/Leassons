@@ -233,8 +233,13 @@ body{
 .homework{
 
 }
+.homework > *:not(:last-child){
+	margin-bottom: 50px;
+}
+
 /* Макет 1 */
 .maket-one {
+	box-shadow: 10px 6px 10px black;
 	background-color: white;
 	max-width: 732px;
 	margin: 0 auto;
@@ -317,4 +322,132 @@ line-height: normal;
 }
 .benefits + .maket-one-title{
 	margin-bottom: 4px;
+}
+/* Макет 2 */
+.maket-two {
+	background-color: white;
+	max-width: 713px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 10px 6px 10px black;
+}
+.maket-two >*:last-child{
+	margin-bottom: 0;
+}
+.maket-laybel::before{
+	content: "";
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: #40DDB6;
+	margin-top: 5px;
+	margin-right: 6px;
+}
+.maket-laybel {
+	color: #37393F;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 16px;
+}
+.two-title {
+	color: #37393F;
+font-family: "Poppins";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.21;
+max-width: 413px;
+margin-bottom: 20px;
+}
+.two-text {
+	line-height: 1.46187;
+	margin-bottom: 20px;
+}
+.two-text p:not(:last-child){
+	margin-bottom: 15px;
+}
+.two-list {
+	color: #37393F;
+font-family: "Poppins";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 43px;
+}
+.two-list li::before{
+	content: "";
+	background: url(../img/benefits-icon-list.svg);
+	width: 27px;
+	height: 28px;
+	display: inline-block;
+	margin-right: 8px;
+	margin-bottom: -8px;
+}
+.two-list li:not(:last-child){
+	margin-bottom: 23px;
+}
+.two-advantages {
+	margin-bottom: 37px;
+}
+.two-advantages >*:not(:first-child){
+	margin-left: 21px;
+}
+
+.advantages-one { 
+	max-width: 295px;
+	width: 50%;
+	display: inline-block;
+	padding: 31px 32px 32px;
+	border: 1px solid #E3E3E3;
+}
+.advantages-one::before{
+	content: "";
+	display: inline-block;
+	width: 39px;
+	height: 41px;
+	background: url(../img/Icon-adventages-one.svg);
+	margin-right: 19px;
+}
+.advantages-title {
+	color: #37393F;
+font-family: "Poppins";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: inline-block;
+}
+.advantages-text {
+line-height: 1.35187;
+display: inline-block;
+padding-left: 64px;
+font-size: 16px;
+}
+.advantages-two {
+	max-width: 305px;
+	border: 1px solid #E3E3E3;
+	width: 49%;
+	display: inline-block;
+	padding: 31px 37px 32px;
+}
+.advantages-two::before{
+	content: "";
+	display: inline-block;
+	width: 39px;
+	height: 41px;
+	background: url(../img/Icon-adventages-two.svg);
+	margin-right: 19px;
+}
+.two-link {
+	color: #FFF;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.two-link a {
+	padding: 27px 21px 22px;
+	background: #6B77E5;
 }
