@@ -199,19 +199,23 @@ body{
 	margin-left: -5%;
 	display: none;
 }
-.title-win:target{
+.header:target ~ .main .game .title-win{
 	display: block;
 }
-.title-win:target ~ .game-title{
+.header:target ~.main .game .game-title{
 	display: none;
 }
-.title-win:target ~ .game-line-two,.title-win:target ~ .game-line-three.start,.title-win:target ~ .game-line-four.two,.title-win:target ~ .game-line-four.two .game-line-five,.title-win:target ~ .game-line-four.two .finish{
+.header:target ~ .main .game .game-line-two,.header:target ~ .main .game
+.game-line-three.start,.header:target ~ .main .game .game-line-four.two,.header:target ~ .main .game .game-line-four.two .game-line-five,.header:target ~ .main .game.game-line-four.two .finish{
 	visibility:visible;
 	opacity: 1;
 }
 
-.title-win:target ~ .game-line-four.two .game-line-five .reset{
+.header:target ~ .main .game .game-line-four.two .game-line-five .reset{
 	display: block;
+}
+.header:target ~ .main .game .game-line-four.two .game-line-five .finish{
+	display: none;
 }
 
 .reset{
