@@ -10,7 +10,7 @@ body{
 	background: url(../img/repeat.jpg);
 }
 .wrapper{
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 /* Стилі шапки */
@@ -40,12 +40,12 @@ body{
 /* Гра */
 .game {
 	font-size: 0;
-	padding: 10px;
+	max-width: 1200px;
+	padding: 15px;
 	background-color: rgba(0, 0, 0, 0.6);
-	height: 450px;
 	border-radius: 20px;
 	box-shadow: inset 0px 0px 9px rgb(8, 218, 26);
-	margin-bottom: 50px;
+	margin: 0 auto 50px;
 }
 .game-title{
 	text-align: center;
@@ -450,4 +450,202 @@ text-transform: capitalize;
 .two-link a {
 	padding: 27px 21px 22px;
 	background: #6B77E5;
+}
+/* Макет 3 */
+.maket-three {
+	padding: 20px;
+	max-width: 1260px;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 10px 6px 10px black
+}
+.three-laybel {
+color: #37393F;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+margin-bottom: 16px;
+}
+.three-laybel::before{
+	content: "";
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: #40DDB6;
+	margin-top: 5px;
+	margin-right: 6px;
+}
+
+.three-title {
+	color: #37393F;
+text-align: center;
+font-family: "Poppins";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.21;
+margin-bottom: 77px;
+}
+.three-services-container {
+	font-size: 0;
+}
+.three-services-container >*:not(:first-child){
+	margin-left: 31px;
+}
+.one-services {
+	background: #F4F4F4;
+	padding: 58px 43px;
+	max-width: 386px;
+	display: inline-block;
+}
+.one-services::before{
+	content: "";
+	display: block;
+	width: 72px;
+	height: 72px;
+	background: url(../img/services-one.svg);
+	margin: -94px auto 22px;
+}
+.services-title {
+	color: #37393F;
+text-align: center;
+font-family:"Poppins";
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.27;
+margin-bottom: 16px;
+}
+.services-text {
+	font-size: 18px;
+	line-height: 1.46187;
+	margin-bottom: 37px;
+}
+.servicas-link {
+	color: #6B77E5;
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.one-services >*:last-child{
+	margin-bottom: 0;
+}
+.two-services {
+	background: #F4F4F4;
+	padding: 58px 43px;
+	max-width: 386px;
+	display: inline-block;
+}
+.two-services::before{
+	content: "";
+	display: block;
+	width: 72px;
+	height: 72px;
+	background: url(../img/services-two.svg);
+	margin: -94px auto 22px;
+}
+.two-services >*:last-child{
+	margin-bottom: 0;
+}
+.three-services {
+	background: #F4F4F4;
+	padding: 58px 43px;
+	max-width: 386px;
+	display: inline-block;
+}
+.three-services >*:last-child{
+	margin-bottom: 0;
+}
+.three-services::before{
+	content: "";
+	display: block;
+	width: 72px;
+	height: 72px;
+	background: url(../img/services-three.svg);
+	margin: -94px auto 22px;
+}
+/* Макет чотири */
+.maket-four {
+	max-width: 1254px;
+	background-color: white;
+	padding: 20px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.maket-four >*:last-child{
+	margin-left: 55px;
+}
+.four-title {
+	display: inline-block;
+	color: #000;
+font-family: "Cormorant Infant";
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.15;
+max-width: 488px;
+vertical-align: top;
+padding-top: 150px;
+}
+.four-title::after{
+	content: "";
+	height: 3px;
+	width: 62%;
+	background-color: #000;
+	display: block;
+	margin-top: 10px;
+}
+.product-one {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 32px;
+	max-width: 334px;
+}
+.product-one >*:last-child{
+	margin-bottom: 0;
+}
+.product-image {
+	border: 1px solid #000;
+	margin-bottom: 34px;
+}
+.product-image img{
+	margin: 9px -10px -9px 10px;
+}
+.product-name {
+	color: #000;
+font-family: "Cormorant Infant";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.4;
+margin-bottom: 4px;
+}
+.product-cost {
+	color: #000;
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+.product-title {
+	color: #000;
+font-family: "Cormorant Infant";
+font-size: 46px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.13;
+margin-bottom: 31px;
+}
+.product-two{
+	display: inline-block;
+	max-width: 334px;
+}
+.product-two >*:last-child{
+	margin-bottom: 0;
 }
