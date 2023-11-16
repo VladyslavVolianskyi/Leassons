@@ -38,6 +38,9 @@ body{
 }
 
 /* Гра */
+.main{
+	margin-bottom: 40px;
+}
 .game {
 	font-size: 0;
 	max-width: 1200px;
@@ -874,3 +877,21 @@ margin-bottom: 31px;
 	border-radius: 50%;
 	margin: 0px 0px 5px 5px;
 }
+/* Стилі футера */
+.footer {
+	padding: 15px;
+	background-color: #fff
+}
+.footer-text {
+	margin-bottom: 10px;
+	text-align: center;
+	color: #000;
+	font-size: 28px;
+}
+.footer-link{
+	text-align: center;
+}
+.footer-link a{
+	text-decoration: underline;
+}
+
