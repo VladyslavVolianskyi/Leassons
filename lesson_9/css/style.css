@@ -28,7 +28,7 @@ body{
 	display: inline-block;
 	padding: 3px 4px;
 	border-radius: 7px;
-	text-shadow: 2opx 2opx 3px black;
+	text-shadow: 2px 2px 3px black;
 }
 .menu-item:hover a{
 	text-decoration: underline;
@@ -47,7 +47,7 @@ body{
 	padding: 15px;
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 20px;
-	box-shadow: inset 2opx 2opx 9px rgb(8, 218, 26);
+	box-shadow: inset 2px 2px 9px rgb(8, 218, 26);
 	margin: 0 auto 50px;
 }
 .game-title{
@@ -68,7 +68,7 @@ body{
 	width: 95%;
 	height: 40px;
 	background-color:  rgb(8, 218, 26);
-	border-radius: 0 2opx 2opx 10px;
+	border-radius: 0 2px 2px 10px;
 	visibility: hidden;
 	opacity: 0;
 }
@@ -174,7 +174,7 @@ body{
 	color: rgb(8, 218, 26);
 	width: 200px;
 	font-size: 26px;
-	text-shadow: 2opx 1px 1px black;
+	text-shadow: 2px 1px 1px black;
 	margin-left:-20px;
 	background-color: blue;
 	padding: 3px 6px;
@@ -225,7 +225,7 @@ body{
 	color: rgb(8, 218, 26);
 	width: 130px;
 	font-size: 26px;
-	text-shadow: 2opx 1px 1px #000;
+	text-shadow: 2px 1px 1px #000;
 	margin-left:-20px;
 	background-color: rgb(255, 0, 0);
 	padding: 3px 6px;
