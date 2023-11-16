@@ -677,8 +677,6 @@ margin-bottom: 31px;
 [class *="properties-"]:not(:last-child){
 	margin-bottom: 50px;
 }
-.properties-hover {
-}
 .block {
 	padding: 10px;
 	background: green;
@@ -767,4 +765,112 @@ margin-bottom: 31px;
 	margin: 0 auto;
 	visibility: visible;
 	opacity: 1;
+}
+/* Псевдоклас focus */
+.focus-inline-block{
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
+}
+.focus-inline-block:focus{
+	outline: 3px solid red;
+	border-radius: 1%;
+}
+
+.discription-focus{
+	display: none;
+}
+.focus-inline-block:focus ~ .discription-focus {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	max-width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+/* Псевдоклас target */
+.target-inline-block {
+	max-width: 50%;
+}
+
+.discription-target {
+	max-width: 40%;
+}
+.discription-target:target{
+	visibility: visible;
+	opacity: 1;
+	display: inline-block;
+
+}
+/* Псевдокласи подоження в коді */
+/* first-child,first-of-type,last-child,last-of-type, */
+.properties-position-in-the-code {
+	text-align: center;
+	font-size: 25px;
+
+}
+.properties-position-in-the-code > *:not(:last-child){
+	margin-bottom: 10px;
+}
+.properties-position-in-the-code p:first-child{
+	background-color: red;
+	color: black;
+
+}
+.properties-position-in-the-code div:first-of-type{
+	background-color: green;
+	color: #000;
+	font-size: 25px;
+}
+.properties-position-in-the-code :nth-child(3){
+	background-color: yellow;
+}
+.properties-position-in-the-code div:last-of-type{
+	background-color: green;
+	color: #000;
+	font-size: 25px;
+}
+.properties-position-in-the-code p:last-child{
+	background-color: red;
+	color: black;
+
+}
+/* Псеадоклас :not */
+.properties-exclusion{
+	text-align: center;
+	font-size: 25px;
+}
+.properties-exclusion >:not(:last-child){
+	margin-bottom: 10px;
+}
+/* Псевдоелементи */
+.properties-after-before >*:last-child{
+	margin-bottom: 0;
+}
+.before{
+	font-size: 30px;
+	max-width: 50%;
+	margin: 0 auto 10px;
+}
+.before::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	margin: 0px 5px 5px 0px;
+}
+.after {
+	font-size: 30px;
+	max-width: 50%;
+	margin: 0 auto 10px;
+}
+.after::after{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	margin: 0px 0px 5px 5px;
 }

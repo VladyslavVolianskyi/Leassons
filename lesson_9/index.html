@@ -186,6 +186,38 @@
 					<a href="visited.html" class="visited-inline-block inline-block">Я посилання "тобто в даному випадку я inline block" (перейди на мене)</a>
 					<div class="discription-visited discription ">Коли ти відвідаєш сторінку куда я веду завдяки псевдокласу <span class="term">:visited</span> я перезапишу властивість background з green на red</div>
 				</div>
+				<div class="properties-focus">
+					<h2 class="properties-title"><span class="term">:focus</span> - елемент отримує цей псевдоклас коли користувач наводить на інтерактивний елемент за допомогою табуляції або поля вводу</h2>
+					<a href="" class="focus-inline-block inline-block">Я посилання "тобто в даному випадку я inline block" (перейди на мене через табуляцію)</a>
+					<div class="discription-focus discription ">Коли ти наведеш на мене за топомогою табуляції завдяки псевдокласу <span class="term">:focus</span> я перезапишу властивість outline з black на red</div>
+				</div>
+				<div class="properties-target">
+					<h2 class="properties-title"><span class="term">:target</span> - елемент отримує цей псевдоклас коли користувач звертається до нього за допомогою посилання з іншого об'єкту</h2>
+					<a href="#target" class="target-inline-block inline-block">Я посилання "тобто в даному випадку я inline block" (наживши на мене ти задаш псевдоклас :target сусідньому блоку)</a>
+					<div id="target" class="discription-target discription ">Коли ти натискаєш на посилання яке переходить на моє ід,завдяки псевдокласу <span class="term">:target</span> я у себе перезаписую властивість visibility з hidden на visible</div>
+				</div>
+				<h2 class="properties-title">Псевдокласи положення в коді</h2>
+				<div class="properties-position-in-the-code">
+					<p>Привіт я параграф і я перший в блоці тобто мій колір заданий псевдокласом :first-child</p>
+					<div>Привіт я div і я в блоці другий елемент але я перший дів тобто мій колір заданий псевдокласом :first-of-type</div>
+					<p>Привіт я параграф і я третій елемент в блоці але другий параграв тобто мій колір заданий псевдокласом :ntn-child(3)</p>
+					<div>Привіт я div і я в блоці четвертий елемент але я останій дів тобто мій колір заданий псевдокласом :last-of-type</div>
+					<p>Привіт я параграф і я останій в блоці тобто мій колір заданий псевдокласом :last-child</p>
+				</div>
+				<h2 class="properties-title"><span class="term">:not()</span> - псевдоклас виключення,при його використані можна задити стилі елеменам ОКРІМ то що вкажаний в дужка</h2>
+				<div class="properties-exclusion">
+					<p>Привіт,у мене відступ в низ 10px</p>
+					<p>Привіт,у мене відступ в низ також 10px</p>
+					<p>Привіт,у мене відступ в низ також 10px</p>
+					<p>Привіт,а у мене немає так як я останій,тому що в псевдокласі :not() записано :last-child</p>
+				</div>
+				<div class="properties-after-before">
+					<h2 class="properties-title">Псевдоелементи: <br> <span class="term">::before</span> - псевдоелемент який з'являється перед контентом в блокі,рядковий елемент за замовчуванням <br>
+						<span class="term">::after</span> - псевдоелемент який з'являється після контенту в блокі,рядковий елемент за замовчуванням
+					</h2>
+					<div class="before">Привіт в мене псевдоелемент before</div>
+					<div class="after">Привіт в мене псевдоелемент after</div>
+				</div>
 			</div>
 		</main>
 		<footer class="footer"></footer>
