@@ -287,9 +287,13 @@ margin-bottom: 12px;
 	margin-bottom: 50px;
 }
 .benefits-image {
+	max-width: 331px;
 	display: inline-block;
 	vertical-align: top;
 	
+}
+.benefits-image img{
+	width: 100%;
 }
 .benefits-content {
 	display: inline-block;
@@ -500,8 +504,13 @@ margin-bottom: 77px;
 .three-services-container {
 	font-size: 0;
 }
-.three-services-container >*:not(:first-child){
+.three-services-container>*:not(:nth-child(3n+1)){
 	margin-left: 31px;
+}
+.card-container{
+	display: inline-block;
+	max-width: 386px;
+	padding-top: 36px;
 }
 .one-services {
 	background: #F4F4F4;
@@ -514,7 +523,7 @@ margin-bottom: 77px;
 	display: block;
 	width: 72px;
 	height: 72px;
-	background: url(../img/services-one.svg);
+	background: url(../img/services-one.svg) 0 0 no-repeat;
 	margin: -94px auto 22px;
 }
 .services-title {
@@ -555,7 +564,7 @@ margin-bottom: 20px;
 	display: block;
 	width: 72px;
 	height: 72px;
-	background: url(../img/services-two.svg);
+	background: url(../img/services-two.svg) 0 0 no-repeat;
 	margin: -94px auto 22px;
 }
 .two-services >*:last-child{
@@ -575,7 +584,7 @@ margin-bottom: 20px;
 	display: block;
 	width: 72px;
 	height: 72px;
-	background: url(../img/services-three.svg);
+	background: url(../img/services-three.svg) 0 0 no-repeat;
 	margin: -94px auto 22px;
 }
 /* Макет чотири */
@@ -624,6 +633,7 @@ padding-top: 150px;
 	margin-bottom: 34px;
 }
 .product-image img{
+	width: 100%;
 	margin: 9px -10px -9px 10px;
 }
 .product-name {
