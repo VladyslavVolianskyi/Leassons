@@ -1,0 +1,128 @@
+/* Шрифти */
+@import url("fonts.css");
+/* Обнулення */
+@import url("reset.css");
+/* Стилі за замовчуванням */
+body{
+	color: #7D7D7D;
+	font-size: 18px;
+	font-family: "Inter",sans-serif;
+}
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+}
+.section-title {
+	margin: 0 auto 10px;
+	font-size: 26px;
+	border-radius: 30px;
+	padding: 5px 10px;
+	text-align: center;
+	max-width: 300px;
+	border: 3px solid rgb(89, 0, 255);
+	color: #000;
+}
+[class*="text"]{
+	line-height: 1.2;
+}
+[class*="-container"]{
+	max-width: 1220px;
+	margin: 0 auto;
+}
+[class*="-container"]:not(:last-child){
+	margin-bottom: 20px;
+}
+[class*="_title"]{
+
+}
+/* Шапка */
+.header {
+	padding: 25px 15px;
+	background-color: #b3b4d3;
+	margin-bottom: 15px;
+}
+.header__list {
+
+}
+.list-header {
+	text-align: center;
+}
+.list-header__link:not(:last-child){
+	margin-right: 55px;
+}
+.list-header__link {
+	color: #000;
+	display: inline-block;
+	font-size: 20px;
+}
+.list-header__link:hover{
+	color: #0a2f94;
+}
+/* Відпрацювання */
+.main {
+	max-width: 1200px;
+	padding: 30px 50px;
+	margin: 0 auto;
+}
+.block {
+	display: inline-block;
+}
+.block-3d{
+	display: inline-block;
+}
+.block__body-3d{
+	perspective: 500px;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+.block__body{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+.block__item {
+	width: 200px;
+	height: 200px;
+	background-color: #115fd4;
+	text-align: center;
+	padding-top: 50%;
+}
+.block__title {
+transform: translate(0,-50%);
+color: #000;
+}
+.block:nth-child(1)>.block__body:hover .block__item{
+	transform: translate( 20px, 20px);
+}
+.block:nth-child(2)>.block__body:hover .block__item{
+	transform: scale(0.7);
+}
+.block:nth-child(3)>.block__body:hover .block__item{
+	transform:rotate(30deg);
+}
+.block:nth-child(4)>.block__body:hover .block__item{
+	transform: skew(-10deg,-20deg);
+}
+.block:nth-child(5)>.block__body:hover .block__item{
+	transform: matrix(0.9,-0.1,-0.2,0.9,10,10);
+}
+.block:nth-child(6)>.block__body:hover .block__item{
+	transform-origin: bottom right;
+	transform: rotate(10deg);
+}
+.block-3d:nth-child(1):hover .block__item{
+	transform: translate3d( 20px, 20px, 20px);
+}
+.block-3d:nth-child(2):hover .block__item{
+	transform: scale3d(1.2,1.2,0.9);
+}
+.block-3d:nth-child(3):hover .block__item{
+	transform: rotate3d(3,3,3, 40deg);
+}
