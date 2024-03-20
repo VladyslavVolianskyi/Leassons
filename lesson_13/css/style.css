@@ -79,6 +79,12 @@ body{
 	margin-left: 50px;
 	margin-bottom: 30px;
 }
+.block-3d:nth-child(4)>.block__body-3d{
+	perspective-origin: 0 0;
+}
+.block-3d:nth-child(5)>.block__body-3d{
+	transform-style: preserve-3d;
+}
 .block__body{
 	width: 200px;
 	height: 200px;
@@ -117,12 +123,18 @@ color: #000;
 	transform-origin: bottom right;
 	transform: rotate(10deg);
 }
-.block-3d:nth-child(1):hover .block__item{
+.block-3d:nth-child(1)>.block__body-3d:hover .block__item{
 	transform: translate3d( 20px, 20px, 20px);
 }
-.block-3d:nth-child(2):hover .block__item{
+.block-3d:nth-child(2)>.block__body-3d:hover .block__item{
 	transform: scale3d(1.2,1.2,0.9);
 }
-.block-3d:nth-child(3):hover .block__item{
+.block-3d:nth-child(3)>.block__body-3d:hover .block__item{
 	transform: rotate3d(3,3,3, 40deg);
+}
+.block-3d:nth-child(4)>.block__body-3d:hover .block__item{
+	transform: rotate3d(3,3,3,40deg);
+}
+.block-3d:nth-child(5)>.block__body-3d:hover .block__item{
+	transform: rotate3d(3,3,3,40deg);
 }
