@@ -55,6 +55,7 @@ body{
 	background-color: #d9ff00;
 	border-radius: 50%;
 	position: relative;
+	animation: rotate-beam 40s linear infinite;
 }
 .sun__beam{
 	position: absolute;
@@ -63,6 +64,7 @@ body{
 	width: 3px;
 	height: 50px;
 	background: linear-gradient(90deg, rgba(217,255,0,1) 0%, rgba(217,255,0,0.8) 50%, rgba(217,255,0,0.6) 100%);
+	
 }
 .sun__beam:nth-child(1){
 	transform-origin: 0 0;
@@ -293,6 +295,7 @@ clip-path: polygon(53% 54%, 66% 45%, 56% 59%, 51% 70%, 47% 85%, 45% 100%, 34% 10
 	top: 2%;
 	left: 70%;
 	border-radius: 0px 8px 0px 0px ;
+	animation: car-drive 20s linear infinite;
 }
 .item {
 }
@@ -312,6 +315,7 @@ clip-path: polygon(53% 54%, 66% 45%, 56% 59%, 51% 70%, 47% 85%, 45% 100%, 34% 10
 	display: inline-block;
 	transform: translate(20px,-180px);
 	position: relative;
+	
 }
 .item .item__whell:not(:nth-child(6)){
 	margin-left: 60px;
@@ -327,6 +331,7 @@ clip-path: polygon(53% 54%, 66% 45%, 56% 59%, 51% 70%, 47% 85%, 45% 100%, 34% 10
 	background-color: #7D7D7D;
 	border: 10px solid black;
 	transform: translate(-25px,0);
+	animation: rotate-whell 20s linear infinite;
 
 }
 
@@ -343,7 +348,7 @@ clip-path: polygon(53% 54%, 66% 45%, 56% 59%, 51% 70%, 47% 85%, 45% 100%, 34% 10
 .item__front-glass{
 	width: 100px;
 	transform: translate(15px,-80px) skew(-20deg);
-	border-bottom: 60px solid rgba(50, 203, 227, 1);;
+	border-bottom: 60px solid rgba(50, 203, 227, 1);
 	border-left: 7px solid yellow;
 	border-right: 30px solid yellow;
 	position: relative;
@@ -403,4 +408,31 @@ clip-path: polygon(53% 54%, 66% 45%, 56% 59%, 51% 70%, 47% 85%, 45% 100%, 34% 10
 	background-color: #f23f4b;
 	transform: translate(235px,-357px) rotate(180deg);
 	border-radius: 0px 10px 0px 0px;
+}
+/* Анаміція */
+@keyframes rotate-beam{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+
+	}
+}
+@keyframes car-drive{
+	0%{
+		left: 120%;
+		}
+	100%{
+		left: -30%;
+	}
+}
+@keyframes rotate-whell{
+	0%{
+		transform:  translate(-25px,0) rotate(0);
+	}
+	100%{
+		transform:   translate(-25px,0) rotate(360deg);
+
+	}
 }
