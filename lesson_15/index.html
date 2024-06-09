@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Leasson 15 - Flex</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<ul class="header__list list-header">
+				<li class="list-header__link"><a href="#working-out">Відпрацювання</a></li>
+				<li class="list-header__link"><a target="_blank" href="Example-site.html">Приклад сайту з липкими
+						елементами</a></li>
+				<li class="list-header__link"><a href="#maket">Блок з макету</a> </li>
+			</ul>
+		</header>
+		<main class="main">
+			<div class="properties properties--display">
+				<h2 class="properties__title">Властивість display у роботі Flex-модуля</h2>
+				<div class="properties__body">
+					<div class="properties__column">
+						<div class="flex-container flex">
+							<div class="flex__name">Робота флекс елемента <br> за замовчуванням</div>
+							<div class="flex__body flex__body--default">
+								<div class="flex-body__item">1</div>
+								<div class="flex-body__item">2</div>
+								<div class="flex-body__item">3</div>
+							</div>
+						</div>
+					</div>
+					<div class="properties__column">
+						<div class="flex-container flex">
+							<div class="flex__name">Робота флекc - контейнера з значенням inline-flex</div>
+							<div class="flex__body flex__body--flex-inline">
+								<div class="flex-body__item">1</div>
+								<div class="flex-body__item">2</div>
+								<div class="flex-body__item">3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="properties properties--nowrap">
+				<h2 class="properties__title">Властивість nowrap у роботі Flex-модуля</h2>
+				<div class="properties__body">
+					<div class="properties__column">
+						<div class="flex-container flex">
+							<div class="flex__name">Робота flex-wrap <br> за замовчуванням(nowrap)</div>
+							<div class="flex__body flex__body--nowrap">
+								<div class="flex-body__item">1</div>
+								<div class="flex-body__item">2</div>
+								<div class="flex-body__item">3</div>
+								<div class="flex-body__item">4</div>
+								<div class="flex-body__item">5</div>
+								<div class="flex-body__item">6</div>
+								<div class="flex-body__item">7</div>
+								<div class="flex-body__item">8</div>
+								<div class="flex-body__item">9</div>
+							</div>
+						</div>
+					</div>
+					<div class="properties__column">
+						<div class="flex-container flex">
+							<div class="flex__name">Робота flex-wrap з значенням wrap</div>
+							<div class="flex__body flex__body--wrap">
+								<div class="flex-body__item">1</div>
+								<div class="flex-body__item">2</div>
+								<div class="flex-body__item">3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</main>
+
+	</div>
+</body>
+
+</html>
