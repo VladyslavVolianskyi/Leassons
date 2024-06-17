@@ -63,9 +63,8 @@ body{
 /* Відпрацювання */
 .main {
 }
-.properties__column{
-	flex: 0 1 50%;
-
+.properties:not(:last-child){
+	margin-bottom: 20px;
 }
 .properties__title{
 	font-size: 30px;
@@ -73,19 +72,29 @@ body{
 }
 .properties__body{
 	display: flex;
+	flex-wrap: wrap;
 }
 .properties{
 	display: flex;
 	flex-direction: column;
 }
-.properties--display{
-	flex: 0 1 50%;
+.properties--display .properties__column{
+	flex: 1 0 50%;
+}
+.properties--nowrap .properties__column{
+	flex: 1 0 33%;
+}
+.properties--justify-content .properties__column{
+	flex: 1 0 33.3%;
 }
 .properties__title{
 	text-align: center;
 }
-.flex-container {
-	
+.properties--display .flex-container {
+	min-height: 210px;
+}
+.properties--nowrap .flex-container {
+	min-height: 270px;
 }
 .flex {
 	padding: 20px;
@@ -99,7 +108,7 @@ body{
 .flex__body{
 	background-color: #794f45c9;
 	padding: 15px;
-	color: white;
+	color: white;	
 	
 }
 .flex__body--default{
@@ -117,6 +126,42 @@ body{
 .flex__body--wrap{
 	display: flex;
 	gap: 10px;
+	flex-wrap: wrap;
+}
+.flex__body--wrap-reverse{
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap-reverse;
+}
+.flex__body--start{
+	display: flex;
+	gap: 10px;
+	justify-content: start;
+}
+.flex__body--center{
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+.flex__body--end{
+	display: flex;
+	gap: 10px;
+	justify-content: end;
+}
+.flex__body--space-between{
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+.flex__body--space-around{
+	display: flex;
+	gap: 10px;
+	justify-content: space-around;
+}
+.flex__body--space-evenly{
+	display: flex;
+	gap: 10px;
+	justify-content: space-evenly;
 }
 .flex-body__item {
 	padding: 20px;
