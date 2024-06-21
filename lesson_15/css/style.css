@@ -42,25 +42,27 @@ body{
 	padding: 25px 15px;
 	background-color: #b3b4d3;
 	margin-bottom: 15px;
+	
 }
 .header__list {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
 
 }
 .list-header {
 	text-align: center;
 }
-.list-header__link:not(:last-child){
-	margin-right: 55px;
-}
+
 .list-header__link {
 	color: #000;
-	display: inline-block;
 	font-size: 20px;
 }
 .list-header__link:hover{
 	color: #0a2f94;
 }
 /* Відпрацювання */
+/* Основні стилі для блоків */
 .main {
 }
 .properties:not(:last-child){
@@ -78,23 +80,12 @@ body{
 	display: flex;
 	flex-direction: column;
 }
-.properties--display .properties__column{
-	flex: 1 0 50%;
-}
-.properties--nowrap .properties__column{
-	flex: 1 0 33%;
-}
-.properties--justify-content .properties__column{
-	flex: 1 0 33.3%;
+.flex-body__item {
+	padding: 20px;
+	background-color: #77608d;
 }
 .properties__title{
 	text-align: center;
-}
-.properties--display .flex-container {
-	min-height: 210px;
-}
-.properties--nowrap .flex-container {
-	min-height: 270px;
 }
 .flex {
 	padding: 20px;
@@ -111,6 +102,13 @@ body{
 	color: white;	
 	
 }
+/* Блок властивості Display */
+.properties--display .properties__column{
+	flex: 1 0 50%;
+}
+.properties--display .flex-container {
+	min-height: 210px;
+}
 .flex__body--default{
 	display: flex;
 	gap: 10px;
@@ -118,6 +116,14 @@ body{
 .flex__body--flex-inline{
 	display: inline-flex;
 	gap: 10px;
+}
+
+/* Блок властивості flex-wrap */
+.properties--nowrap .properties__column{
+	flex: 1 0 33%;
+}
+.properties--nowrap .flex-container {
+	min-height: 270px;
 }
 .flex__body--nowrap{
 	display: flex;
@@ -132,6 +138,11 @@ body{
 	display: flex;
 	gap: 10px;
 	flex-wrap: wrap-reverse;
+}
+
+/* Блок властивості justify-content */
+.properties--justify-content .properties__column{
+	flex: 1 0 33.3%;
 }
 .flex__body--start{
 	display: flex;
@@ -163,7 +174,152 @@ body{
 	gap: 10px;
 	justify-content: space-evenly;
 }
-.flex-body__item {
-	padding: 20px;
-	background-color: #77608d;
+
+/* Блок align-items */
+.properties--align-items .properties__column{
+	flex: 1 0 33.3%;
+}
+.properties--align-items .flex__body{
+	min-height: 200px;
+}
+.flex__body--strach{
+	display: flex;
+	gap: 10px;
+	align-items: stretch;
+}
+.properties--align-items .flex__body--start{
+	justify-content: start;
+	align-items: start;
+}
+.properties--align-items .flex__body--center{
+	justify-content: start;
+	align-items: center;
+}
+.properties--align-items .flex__body--end{
+	justify-content: start;
+	align-items: end;
+}
+.properties--align-items .flex__body--baseline{
+	display: flex;
+	gap: 10px;
+	align-items: baseline;
+}
+/* Блок властивості flex-direction */
+.properties--flex-direction .properties__column{
+	flex: 1 0 50%;
+}
+.properties--flex-direction .flex-container {
+	min-height: 340px;
+}
+.flex__body--row{
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+}
+.flex__body--row-reverse{
+	display: flex;
+	gap: 10px;
+	flex-direction: row-reverse;
+}
+.flex__body--column{
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+.flex__body--column-reverse{
+	display: flex;
+	gap: 10px;
+	flex-direction: column-reverse;
+}
+/* Блок властивості GAP */
+.properties--gap .properties__column{
+	flex: 0 1 33.333%;
+}
+.properties--gap .flex-container {
+	min-height: 290px;
+}
+.flex__body--gap{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.flex__body--column-gap{
+	display: flex;
+	column-gap: 30px;
+	flex-wrap: wrap;
+}
+.flex__body--row-gap{
+	display: flex;
+	row-gap: 30px;
+	flex-wrap: wrap;
+}
+/* Блок властивості align-self */
+.properties--align-self .properties__column{
+	flex: 0 1 33.333%;
+}
+.properties--align-self .flex-container {
+	min-height: 290px;
+}
+.properties--align-self .flex__body--start{
+	align-self: flex-start;
+}
+.properties--align-self .flex__body--center{
+	align-self: center;
+}
+.properties--align-self .flex__body--end{
+	align-self: flex-end;
+}
+/* Блок властивості order */
+.properties--order .properties__column{
+	flex: 0 1 100%;
+}
+.flex__body--order{
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex__body--order .flex-body__item:nth-child(1){
+	order: 13;
+}
+.flex__body--order .flex-body__item:nth-child(2){
+	order: 11;
+}
+.flex__body--order .flex-body__item:nth-child(3){
+	order: 10;
+}
+.flex__body--order .flex-body__item:nth-child(4){
+	order: 5;
+}
+.flex__body--order .flex-body__item:nth-child(5){
+	order: 15;
+}
+.flex__body--order .flex-body__item:nth-child(6){
+	order: 14;
+}
+.flex__body--order .flex-body__item:nth-child(7){
+	order: 12;
+}
+.flex__body--order .flex-body__item:nth-child(8){
+	order: 7;
+}
+.flex__body--order .flex-body__item:nth-child(9){
+	order: 2;
+}
+.flex__body--order .flex-body__item:nth-child(10){
+	order: 3;
+}
+.flex__body--order .flex-body__item:nth-child(11){
+	order: 9;
+}
+.flex__body--order .flex-body__item:nth-child(12){
+	order: 8;
+}
+.flex__body--order .flex-body__item:nth-child(13){
+	order: 6;
+}
+.flex__body--order .flex-body__item:nth-child(14){
+	order: 4;
+}
+.flex__body--order .flex-body__item:nth-child(15){
+	order: 1;
 }
