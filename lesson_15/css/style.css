@@ -323,3 +323,150 @@ body{
 .flex__body--order .flex-body__item:nth-child(15){
 	order: 1;
 }
+/* Стилі блоку з категоріями */
+.main__container{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+.maket-one {
+	display: flex;
+	margin: 0 -25px;
+	flex-wrap: wrap;
+}
+[class*="__number"]{
+	width: 100%;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	color: red;
+}
+.maket-one__number:not(:last-child){
+	margin-bottom: 15px;
+}
+.maket-one__column {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 25%;
+	padding: 0px 25px;
+	margin-bottom: 50px;
+}
+.maket-one__item {
+}
+
+.item-maket-one {
+	display:flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.item-maket-one__image{
+	overflow: hidden;
+}
+.item-maket-one__image img {
+	max-width: 100%;
+}
+.item-maket-one__image:not(:last-child) {
+	margin-bottom: 15px;
+}
+.item-maket-one__body {
+	display: flex;
+	flex-grow: 1;
+}
+.item-maket-one__content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.item-maket-one__title {
+	color: #2A2F2F;
+	font-family: "Causten",serif;
+	font-size: 18px;
+	font-weight: bold;
+	flex-grow: 1;
+}
+.item-maket-one__title:not(:last-child) {
+	margin-bottom: 5px;
+}
+.item-maket-one__link-title {
+}
+.item-maket-one__text {
+	font-family: "Causten",serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+.item-maket-one__link {
+	align-self: flex-start;
+	min-height: 18px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 18px;
+	background: url('../img/block-categories/Arrow1.svg') center no-repeat;
+}
+/* Макет 2 */
+.maket-two {
+}
+.maket-two__number {
+	margin-bottom: 15px;
+}
+.maret-two__container {
+	max-width: 1470;
+	padding: 0px 100px;
+	margin: 0 auto;
+	display: flex;
+}
+.maket-two__logo-img {
+	
+}
+.maket-two__logo-img img{
+	max-width: 100%;
+}
+.maket-two__input-search {
+	position: relative;
+	margin-left: 165px;
+	
+	
+}
+.maket-two__input-search input{
+	width: 185px;
+	height: 46px;
+	background-color: #F6F6F6;
+	border-radius: 8px;
+}
+.maket-two__input-search::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 48px;
+	width: 20px;
+	height: 20px;
+	background: url('../img/block-cap/search-icon.svg') center no-repeat;
+	margin-right: 12px;
+}
+.maket-two__input-search input::placeholder{
+	font-family: "Causten",serif;
+	color: #807D7E;
+	font-size: 18px;
+	padding-left: 80px;
+}
+.maket-two__language {
+	margin-left: 210px;
+}
+.language {
+	color: #333333;
+	width: 206px;
+	font-family: "Causten",serif;
+	font-size: 18px;
+}
+.language__item {
+}
+.language__item:nth-child(2){
+	display: none;
+}
+.language__item:nth-child(3){
+	display: none;
+}
+.maket-two__login {
+}
+.maket-two__sign-up {
+}
