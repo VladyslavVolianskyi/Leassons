@@ -9,7 +9,7 @@
 	url('../fonts/causten-regular.woff') format('woff'),
 	url('../fonts/causten-regular.woff2') format('woff2');
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 }
 @font-face {
 	font-family: 'Causten';
@@ -18,6 +18,14 @@
 	url('../fonts/causten-bold.woff2') format('woff2');
 	font-style: normal;
 	font-weight: bold;
+}
+@font-face {
+	font-family: 'Causten';
+	src:
+	url('../fonts/causten-medium.woff') format('woff'),
+	url('../fonts/causten-medium.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 500;
 }
 @font-face {
 	font-family: 'Core Sans C';
