@@ -597,3 +597,168 @@ body{
 	margin-left: 50px;
 	
 }
+/* Макет 4 */
+.maket-four {
+}
+.maket-four__container {
+	max-width: 925px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.maket-four__number {
+}
+.order {
+	margin-bottom: 60px;
+	position: relative;
+}
+.order::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 100%;
+	height: 1px;
+	width: 894px;
+	background-color: #EDEEF2;
+	margin-top: 30px;
+}
+.order__section-one {
+}
+.order__section-one:not(:last-child){
+	margin-bottom: 30px;
+}
+.one-section {
+	background-color: #F6F6F6;
+	padding: 28px 47px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 8px;
+}
+.one-section__item {
+}
+.one-section__item span{
+	color: #BEBCBD;
+	font-weight: 400;
+}
+.number {
+	flex-basis: 100%;
+	order: 1;
+	color: #3C4242;
+	font-family: "Causten",serif;
+	font-weight: 600;
+	font-size: 20px;
+}
+.date {
+	flex-grow: 1;
+	flex-basis: 50%;
+	order: 2;
+	color: #807D7E;
+	font-family: "Causten",serif;
+	font-weight: 600;
+	font-size: 14px;
+}
+.delivery {
+	flex-grow: 1;
+	flex-basis: 50%;
+	order: 4;
+	font-family: "Causten",serif;
+	font-weight: 600;
+	font-size: 14px;
+}
+.status {
+	flex-grow: 1;
+	flex-basis: 50%;
+	order: 3;
+	text-align: end;
+	font-family: "Causten",serif;
+	font-weight: 600;
+	font-size: 14px;
+}
+.payment {
+	flex-grow: 1;
+	flex-basis: 50%;
+	order: 5;
+	text-align: end;
+	font-family: "Causten",serif;
+	font-weight: 600;
+	font-size: 14px;
+}
+.number:not(:last-child){
+	margin-bottom: 14px;
+}
+.date:not(:last-child){
+	margin-bottom: 7px;
+}
+.delivery:not(:last-child){
+	margin-bottom: 7px;
+}
+.status:not(:last-child){
+	margin-bottom: 7px;
+}
+.payment:not(:last-child){
+	margin-bottom: 7px;
+}
+.order__section-two {
+	display: flex;
+}
+.two-section {
+}
+.two-section__image {
+	width: 96px;
+	height: 96px;
+}
+/* .two-section__image img {
+	max-width: 100%;
+} */
+.two-section__body {
+	margin-left: 25px;
+}
+.body {
+	flex-grow: 1;
+	/* padding: 3px 0px; */
+	align-self: center;
+}
+.body__item span{
+	color: #BEBCBD;
+	font-weight: 400;
+	
+}
+.body__item {
+	font-family: "Causten",serif;
+	font-weight: 600;
+	font-size: 14px;
+	color: #3C4242;
+}
+.name {
+	font-size: 16px;
+}
+.name:not(:last-child){
+	margin-bottom: 10px;
+}
+.color {
+}
+.color:not(:last-child){
+	margin-bottom: 5px;
+}
+.quantity {
+}
+.quantity:not(:last-child){
+	margin-bottom: 5px;
+}
+.total {
+	color: #807D7E;
+}
+.total:not(:last-child){
+	margin-bottom: 5px;
+}
+.two-section__button {
+	align-self: center;
+	/* width: 144px;
+	height: 50px; */
+	font-family: "Causten",serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #8A33FD;
+	border-radius: 8px;
+	padding: 14px 28px;
+}
