@@ -12,10 +12,46 @@
 		<div class="example">
 			<h2 class="example__title">Приклади всіх полів форми</h2>
 			<div class="example__container">
+				<div class="example__column">
+					<form action="#" method="get" class="form form__date">
+						<h3 class="form__title" >Форма з полями дати</h3>
+						<div class="form__line">
+							<label class="form__label" for="date">Поле з типом "date"</label>
+							<input type="date" class="form__input" id="date" autocomplete="off" name="date">
+							<p>Поле у якому вводиться дата</p>
+						</div>
+					
+						<div class="form__line">
+							<label class="form__label" for="datetime-local">Поле з типом "datetime-local"</label>
+							<input type="datetime-local" class="form__input" id="datetime-local" autocomplete="off" name="datetime-local">
+							<p>Поле у якому вводиться дата і час</p>
+						</div>
+						
+						<div class="form__line">
+							<label class="form__label" for="month">Поле з типом "month"</label>
+							<input type="month" class="form__input" id="month" autocomplete="off" name="month">
+							<p>Поле у якому вводиться місяць і рік</p>
+						</div>
+					
+						<div class="form__line">
+							<label class="form__label" for="time">Поле з типом "time"</label>
+							<input type="time" class="form__input" id="time" autocomplete="off" name="time">
+							<p>Поле у якому вводиться час</p>
+						</div>
+					
+						
+					
+						<div class="form__line">
+							<label class="form__label" for="week">Поле з типом "week"</label>
+							<input type="week" class="form__input" id="week" autocomplete="off" name="week">
+							<p>Поле у якому вводиться номер тижня і рік</p>
+						</div>
+					</form>
+				</div>
 
 				<div class="example__column">
 					<form action="#" method="get" class="form form__text">
-						<h3 class="form__title" >Форма з текствовими полями</h3>
+						<h3 class="form__title" >Форма з полями дати</h3>
 						<div class="form__line">
 							<label class="form__label" for="input-01">Поле з типом "text"</label>
 							<input type="text" class="form__input" id="input-01" autocomplete="off" name="age" placeholder="Введіть ваш вік">
@@ -56,69 +92,37 @@
 					</form>
 				</div>
 
-				<div class="example__column">
-					<form action="#" method="get" class="form form__date">
-						<h3 class="form__title" >Форма з полями дати</h3>
-						<div class="form__line">
-							<label class="form__label" for="date">Поле з типом "date"</label>
-							<input type="date" class="form__input" id="date" autocomplete="off" name="date">
-							<p>Поле у якому вводиться дата</p>
-						</div>
-					
-						<div class="form__line">
-							<label class="form__label" for="datetime-local">Поле з типом "datetime-local"</label>
-							<input type="datetime-local" class="form__input" id="datetime-local" autocomplete="off" name="datetime-local">
-							<p>Поле у якому вводиться дата і час</p>
-						</div>
-						
-						<div class="form__line">
-							<label class="form__label" for="month">Поле з типом "month"</label>
-							<input type="month" class="form__input" id="month" autocomplete="off" name="month">
-							<p>Поле у якому вводиться місяць і рік</p>
-						</div>
-					
-						<div class="form__line">
-							<label class="form__label" for="time">Поле з типом "time"</label>
-							<input type="time" class="form__input" id="time" autocomplete="off" name="time">
-							<p>Поле у якому вводиться час</p>
-						</div>
-					
-						
-					
-						<div class="form__line">
-							<label class="form__label" for="week">Поле з типом "week"</label>
-							<input type="week" class="form__input" id="week" autocomplete="off" name="week">
-							<p>Поле у якому вводиться номер тижня і рік</p>
-						</div>
-					</form>
-				</div>
+				
 
 				<div class="example__column">
 					<form action="#" method="get" class="form form__choice">
+						<h3 class="form__title" >Форма з полями вибору</h3>
 						<div class="form__line">
 							<label class="form__label" for="checkbox">Поле з типом "checkbox"</label>
-							<input type="checkbox" class="form__input" id="checkbox" autocomplete="off" name="checkbox">
+							<input type="checkbox" checked class="form__input" id="checkbox" autocomplete="off" name="checkbox">
+							<input type="checkbox" checked class="form__input" id="checkbox" autocomplete="off" name="checkbox">
+							<p>Можна вибрати обидва значення</p>
 						</div>
 					
 						<div class="form__line">
 							<label class="form__label" for="radio">Поле з типом "radio"</label>
+							<input type="radio" checked class="form__input" id="radio" autocomplete="off" name="radio">
 							<input type="radio" class="form__input" id="radio" autocomplete="off" name="radio">
+							<p>Можна вибрати одне значення</p>
 						</div>
 					
-						<div class="form__line">
-							<label class="form__label" for="radio">Поле з типом "radio"</label>
-							<input type="radio" class="form__input" id="radio" autocomplete="off" name="radio">
-						</div>
 					
 						<div class="form__line">
 							<label class="form__label" for="range">Поле з типом "range"</label>
 							<input type="range" class="form__input" id="range" autocomplete="off" name="range">
+							<p>Смуха яка заповнюється рухом миші</p>
 						</div>
 					</form>
 				</div>
 
 				<div class="example__column">
 					<form action="#" method="get" class="form form__other">
+						<h3 class="form__title" >Форма з іншими варіантами</h3>
 						<div class="form__line">
 							<label class="form__label" for="color">Поле з типом "color"</label>
 							<input type="color" class="form__input" id="color" name="color">
