@@ -37,7 +37,56 @@ body{
 [class*="_title"]{
 
 }
-.form {
+.example{
+	color: #000;
 	padding: 20px;
-	background-color: #dddada;
+	background-color: #cecccc;
+}
+.example__container{
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.example__column{
+	flex: 1 0 19%;
+}
+
+.example__title {
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.form-text{
+}
+.form__line {
+	border: 1px solid #000;
+	padding: 5px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+.form__line p {
+	color: rgb(180, 67, 67);
+	font-size: 20px;
+}
+
+.form__line *:not(:last-child){
+	margin-bottom: 5px;
+}
+
+.form__line:not(:last-child){
+	margin-bottom: 15px;
+}
+.form__title{
+	text-align: center;
+}
+.form__title:not(:last-child){
+	margin-bottom: 10px;
+}
+.form__label {
+}
+.form__input {
 }
