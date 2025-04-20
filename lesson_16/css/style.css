@@ -37,10 +37,14 @@ body{
 [class*="_title"]{
 
 }
+/* Відпрацювання теорії */
 .example{
 	color: #000;
 	padding: 20px;
 	background-color: #cecccc;
+}
+.example:not(:last-child){
+	margin-bottom: 50px;
 }
 .example__container{
 	display: flex;
@@ -68,7 +72,6 @@ body{
 	justify-content: space-between;
 	/* height: 8em; */
 	
-
 }
 .form__line p {
 	color: rgb(180, 67, 67);
@@ -95,3 +98,7 @@ body{
 .form__input {
 	height: 3em;
 }
+[class*="--center"]{
+	margin: 0 auto;
+}
+/* макет 1 */

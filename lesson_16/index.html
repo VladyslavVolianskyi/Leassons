@@ -7,78 +7,49 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Leasson 16 - HTML - форми</title>
 </head>
+
 <body>
 	<div class="wrapper">
+
 		<div class="example">
 			<h2 class="example__title">Приклади всіх полів форми</h2>
 			<div class="example__container">
-				<div class="example__column">
-					<form action="#" method="get" class="form form__date">
-						<h3 class="form__title" >Форма з полями дати</h3>
-						<div class="form__line">
-							<label class="form__label" for="date">Поле з типом "date"</label>
-							<input type="date" class="form__input" id="date" autocomplete="off" name="date">
-							<p>Поле у якому вводиться дата</p>
-						</div>
-					
-						<div class="form__line">
-							<label class="form__label" for="datetime-local">Поле з типом "datetime-local"</label>
-							<input type="datetime-local" class="form__input" id="datetime-local" autocomplete="off" name="datetime-local">
-							<p>Поле у якому вводиться дата і час</p>
-						</div>
-						
-						<div class="form__line">
-							<label class="form__label" for="month">Поле з типом "month"</label>
-							<input type="month" class="form__input" id="month" autocomplete="off" name="month">
-							<p>Поле у якому вводиться місяць і рік</p>
-						</div>
-					
-						<div class="form__line">
-							<label class="form__label" for="time">Поле з типом "time"</label>
-							<input type="time" class="form__input" id="time" autocomplete="off" name="time">
-							<p>Поле у якому вводиться час</p>
-						</div>
-					
-						
-					
-						<div class="form__line">
-							<label class="form__label" for="week">Поле з типом "week"</label>
-							<input type="week" class="form__input" id="week" autocomplete="off" name="week">
-							<p>Поле у якому вводиться номер тижня і рік</p>
-						</div>
-					</form>
-				</div>
 
 				<div class="example__column">
-					<form action="#" method="get" class="form form__text">
-						<h3 class="form__title" >Форма з полями дати</h3>
+					<form action="#" method="get" class="form form__date">
+						<h3 class="form__title">Форма з текстовими полями</h3>
 						<div class="form__line">
 							<label class="form__label" for="input-01">Поле з типом "text"</label>
-							<input type="text" class="form__input" id="input-01" autocomplete="off" name="age" placeholder="Введіть ваш вік">
+							<input type="text" class="form__input" id="input-01" autocomplete="off" name="age"
+								placeholder="Введіть ваш вік">
 							<p>Поле у якому ми вводемо абсолютно любий текст</p>
 						</div>
-				
+
 						<div class="form__line">
 							<label class="form__label" for="email">Поле з типом "email"</label>
-							<input type="email" class="form__input" placeholder="Введіть вашу пошту" id="email" autocomplete="off" name="email">
+							<input type="email" class="form__input" placeholder="Введіть вашу пошту" id="email"
+								autocomplete="off" name="email">
 							<p>Поле яке валідує введення пошти</p>
 						</div>
+
 						<div class="form__line">
 							<label class="form__label" for="number">Поле з типом "number"</label>
 							<input type="number" class="form__input" id="number" autocomplete="off" name="number">
 							<p>Поле яке приймає лише числові значення</p>
-							
 						</div>
+
 						<div class="form__line">
 							<label class="form__label" for="password">Поле з типом "password"</label>
 							<input type="password" class="form__input" id="password" autocomplete="off" name="password">
 							<p>Поле яке маскує введенні дані</p>
 						</div>
+
 						<div class="form__line">
 							<label class="form__label" for="search">Поле з типом "search"</label>
 							<input type="search" class="form__input" id="search" autocomplete="off" name="search">
 							<p>Поле в якому при початку ввдення даних,одразу з'явиться хрестик</p>
 						</div>
+
 						<div class="form__line">
 							<label class="form__label" for="tel">Поле з типом "tel"</label>
 							<input type="tel" class="form__input" id="tel" autocomplete="off" name="tel">
@@ -92,26 +63,66 @@
 					</form>
 				</div>
 
-				
+				<div class="example__column">
+					<form action="#" method="get" class="form form__date">
+						<h3 class="form__title">Форма з полями дати</h3>
+						<div class="form__line">
+							<label class="form__label" for="date">Поле з типом "date"</label>
+							<input type="date" class="form__input" id="date" autocomplete="off" name="date">
+							<p>Поле у якому вводиться дата</p>
+						</div>
+
+						<div class="form__line">
+							<label class="form__label" for="datetime-local">Поле з типом "datetime-local"</label>
+							<input type="datetime-local" class="form__input" id="datetime-local" autocomplete="off"
+								name="datetime-local">
+							<p>Поле у якому вводиться дата і час</p>
+						</div>
+
+						<div class="form__line">
+							<label class="form__label" for="month">Поле з типом "month"</label>
+							<input type="month" class="form__input" id="month" autocomplete="off" name="month">
+							<p>Поле у якому вводиться місяць і рік</p>
+						</div>
+
+						<div class="form__line">
+							<label class="form__label" for="time">Поле з типом "time"</label>
+							<input type="time" class="form__input" id="time" autocomplete="off" name="time">
+							<p>Поле у якому вводиться час</p>
+						</div>
+
+
+
+						<div class="form__line">
+							<label class="form__label" for="week">Поле з типом "week"</label>
+							<input type="week" class="form__input" id="week" autocomplete="off" name="week">
+							<p>Поле у якому вводиться номер тижня і рік</p>
+						</div>
+					</form>
+				</div>
+
+
 
 				<div class="example__column">
 					<form action="#" method="get" class="form form__choice">
-						<h3 class="form__title" >Форма з полями вибору</h3>
+						<h3 class="form__title">Форма з полями вибору</h3>
 						<div class="form__line">
 							<label class="form__label" for="checkbox">Поле з типом "checkbox"</label>
-							<input type="checkbox" checked class="form__input" id="checkbox" autocomplete="off" name="checkbox">
-							<input type="checkbox" checked class="form__input" id="checkbox" autocomplete="off" name="checkbox">
+							<input type="checkbox" checked class="form__input" id="checkbox" autocomplete="off"
+								name="checkbox">
+							<input type="checkbox" checked class="form__input" id="checkbox" autocomplete="off"
+								name="checkbox">
 							<p>Можна вибрати обидва значення</p>
 						</div>
-					
+
 						<div class="form__line">
 							<label class="form__label" for="radio">Поле з типом "radio"</label>
 							<input type="radio" checked class="form__input" id="radio" autocomplete="off" name="radio">
 							<input type="radio" class="form__input" id="radio" autocomplete="off" name="radio">
 							<p>Можна вибрати одне значення</p>
 						</div>
-					
-					
+
+
 						<div class="form__line">
 							<label class="form__label" for="range">Поле з типом "range"</label>
 							<input type="range" class="form__input" id="range" autocomplete="off" name="range">
@@ -122,39 +133,117 @@
 
 				<div class="example__column">
 					<form action="#" method="get" class="form form__other">
-						<h3 class="form__title" >Форма з іншими варіантами</h3>
+						<h3 class="form__title">Форма з іншими варіантами</h3>
 						<div class="form__line">
 							<label class="form__label" for="color">Поле з типом "color"</label>
-							<input type="color" class="form__input" id="color" name="color">
+							<input type="color" class="form__input form__input--center" id="color" name="color">
+							<p>Поле вибиру кольору</p>
 						</div>
-					
+
 						<div class="form__line">
 							<label class="form__label" for="file">Поле з типом "file"</label>
-							<input type="file" class="form__input" id="file" autocomplete="off" name="file">
+							<input type="file" class="form__input form__input--center" id="file" autocomplete="off"
+								name="file">
+							<p>Поле для передачі файлів на сервер</p>
 						</div>
-					
+
 						<div class="form__line">
 							<label class="form__label" for="hidden">Поле з типом "hidden"</label>
 							<input type="hidden" class="form__input" id="hidden" autocomplete="off" name="hidden">
+							<p>Поле з типом hidden не відображається </p>
 						</div>
 					</form>
 				</div>
 
 				<div class="example__column">
-					<form action="#">
+					<form action="#" method="get" class="form form__button">
+						<h3 class="form__title">Види кнопок у формі</h3>
 						<div class="form__line">
 							<label class="form__label" for="reset">Поле з типом "reset"</label>
 							<input type="reset" class="form__input" id="reset" autocomplete="off" name="reset">
+							<p>Формується кнопка яка очищає заповнені поля форми</p>
 						</div>
 						<div class="form__line">
 							<label class="form__label" for="submit">Поле з типом "submit"</label>
 							<input type="submit" class="form__input" id="submit" autocomplete="off" name="submit">
+							<p>Формується кнопка яка відправляє форму</p>
 						</div>
 					</form>
 				</div>
 
 			</div>
-			
+
 		</div>
-		</div>
+
+		<form action="#" method="post" class="form-one">
+			<h2 class="form-one__title">My Info</h2>
+			<h4 class="form-one__subtitle">Add Address</h4>
+			<div action="#" method="post" class="form-one__content">
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="name">First Name*</label>
+					<input type="text" name="name" id="name" placeholder="First Name" required class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="country">Country / Region*</label>
+					<input type="text" name="country" id="country" placeholder="Country / Region" required
+						class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="address">Street Address*</label>
+					<input type="text" name="addres" id="adress" placeholder="House number and street name" required
+						class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="city">City*</label>
+					<input type="text" name="city" id="city" placeholder="Town / City" required class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="phone">Phone*</label>
+					<input type="tel" name="phone" id="phone" placeholder="Phone" required class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="last-name">Last Name*</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Last Name" required class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="company">Company Name</label>
+					<input type="text" name="company" id="company" placeholder="Company (optional)" class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="apt">Apt, suite, unit</label>
+					<input type="text" name="apt" id="apt" placeholder="apartment, suite, unit, etc. (optional)"
+						class="form-one__input">
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="state">State*</label>
+					<select class="form-one__select select-line" name="state" id="state">
+						<option value="">М</option>
+						<option value="">F</option>
+					</select>
+				</div>
+
+				<div class="form-one__line">
+					<label class="form-one__label" for="postal">Postal Code*</label>
+					<input type="text" name="postal" id="postal" placeholder="Postal Code" class="form-one__input">
+				</div>
+
+				<div class="form-one__line form-one--textarea">
+					<label class="form-one__textarea" for="textarea">Delivery Instruction</label>
+					<input type="textarea" name="postal" id="postal" placeholder="Delivery Instruction" class="form-one__textarea">
+				</div>
+				
+
+
+			</div>
+		</form>
+	</div>
 </body>
