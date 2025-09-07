@@ -102,3 +102,179 @@ body{
 	margin: 0 auto;
 }
 /* макет 1 */
+.form-one {
+	max-width: 895px;
+	margin: 0 auto;
+}
+.form-one:not(:last-child){
+	margin-bottom: 100px;
+}
+.form-one__title {
+	font-family: "Core Sans C";
+	font-size: 28px;
+	font-weight: bold;
+	color: #3C4242;
+}
+.form-one__title:not(:last-child){
+	margin-bottom: 20px;
+}
+.form-one__subtitle:not(:last-child) {
+	margin-bottom: 50px;
+}
+.form-one__subtitle{
+	font-family: "Core Sans C";
+	font-size: 22px;
+	font-weight: bold;
+	color: #3C4242;
+}
+.form-one__content {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 28px;
+}
+.form-one__line {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 430px;
+	font-family: 'Causten',serif;
+
+}
+.form-one__line:not(:last-child){
+	margin-bottom: 30px;
+}
+.form-one__label,.textarea__label {
+	font-family: "Causten";
+	font-weight: bold;
+}
+.form-one__label:not(:last-child),.textarea__label:not(:last-child) {
+	margin-bottom: 10px;
+}
+.form-one__input {
+	height: 55px;
+	background-color:#F6F6F6;
+	padding: 17px 0px 17px 22px;
+	border-radius: 8px;
+}
+input,textarea::placeholder{
+	color: #807D7E;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Causten', serif;
+}
+.form-one__select {
+	appearance: none;        
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url("../img/icon-mark-select.png") no-repeat right 18px center;
+}
+.select-line {
+	height: 55px;
+	background-color:#F6F6F6;
+	padding: 17px 0px 17px 22px;
+	border-radius: 8px;
+	font-family: 'Causten',serif;
+	font-size: 16px;
+	color: #807D7E;
+}
+.textarea {
+	flex: 1 1 100%;
+}
+.textarea__textarea {
+	height: 181px;
+	background-color:#F6F6F6;
+	padding: 17px 0px 17px 22px;
+	border-radius: 8px;
+}
+
+.checbox {
+	flex: 1 1 100%;
+	flex-direction: row;
+	position: relative;
+}
+.checbox:not(:last-child){
+	margin-bottom: 12px;
+}
+.checbox--margin:not(:last-child){
+	margin-bottom: 50px;
+}
+.checbox__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.checbox__input:focus-visible + .checbox__label {
+	outline: 2px solid black;
+	border-radius: 8px;
+}
+
+.checbox__label {
+	display: flex;
+	gap: 11px;
+	font-family: 'Causten',serif;
+	color: #3C4242;
+}
+
+.checbox__label::before {
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border: 2px solid #BEBCBD;
+	border-radius: 2px;
+	content: "";
+}
+
+
+.form-one__button {
+	flex: 0 0 295px;
+	display: flex;
+	column-gap: 30px;
+	height: 48px;
+	
+}
+.button {
+}
+
+.button__save {
+	font-family: "Causten",serif;
+	font-size: 20px;
+	width: 125px;
+	color: #FFFFFF;
+	background-color: #8A33FD;
+	border-radius: 8px;
+}
+.button__cancel {
+	font-family: "Causten",serif;
+	font-size: 20px;
+	width: 141px;
+	border-radius: 8px;
+	font-weight: bold;
+	background-color: #F6F6F6;
+	color: #807D7E;
+}
+
+/* Макет 2 */
+
+.maket-two {
+}
+.maket-two__title {
+}
+.maket-two__form {
+}
+.form-billing {
+}
+.form-billing__title {
+}
+.form-billing__content {
+}
+.form-billing__line {
+}
+.form-billing__input {
+}
+.form-billing__label {
+}
+.form-billing__button {
+}
