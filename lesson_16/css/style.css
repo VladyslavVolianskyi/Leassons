@@ -146,6 +146,7 @@ body{
 .form-one__label,.textarea__label {
 	font-family: "Causten";
 	font-weight: bold;
+	color: #3C4242;
 }
 .form-one__label:not(:last-child),.textarea__label:not(:last-child) {
 	margin-bottom: 10px;
@@ -166,7 +167,7 @@ input,textarea::placeholder{
 	appearance: none;        
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: url("../img/icon-mark-select.png") no-repeat right 18px center;
+	background: url("../img/icon-mark-select.svg") no-repeat right 18px center;
 }
 .select-line {
 	height: 55px;
@@ -260,8 +261,7 @@ input,textarea::placeholder{
 /* Макет 2 */
 
 .maket-two {
-	width: 802px;
-	margin: 0 auto;
+	
 }
 .maket-two__title {
 	display: flex;
@@ -269,6 +269,7 @@ input,textarea::placeholder{
 	color: #3C4242;
 	font-family: "Core Sans C",serif;
 	font-weight: bold;
+	font-size: 28px;
 	
 }
 .maket-two__title:not(:last-child) {
@@ -283,38 +284,92 @@ input,textarea::placeholder{
 	margin-right: 15px;
 }
 .maket-two__form {
-
+	max-width: 802px;
+	margin: 0 auto;
 }
 .form-billing {
 }
 .form-billing__title {
+	font-family: "Core Sans C",serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #3C4242;
 }
 .form-billing__title:not(:last-child){
-	
+	margin-bottom: 50px;
 }
 .form-billing__content {
-		display: flex;
+	display: flex;
 	flex-wrap: wrap;
-	column-gap: 38px;
 	row-gap: 25px;
+	margin: 0px -19px;
+}
+
+.form-billing__content:not(:last-child) {
+	margin-bottom: 40px;
 }
 
 .form-billing__line {
+	min-width: 290px;
 	display: flex;
 	flex-direction: column;
-	flex: 1 1 382px;
+	flex: 1 1 50%;
+	padding: 0 19px;
+}
+.form-billing__line--mini-width{
+	min-width: 246px;
+	padding: 0 16px;
+	flex: 1 1 33.3%;
 }
 
-.form-billing__line--mini-width{
-	flex: 0 1 246px;
-}
-.form-billing__info-address{
-	display: flex;
-	column-gap: 32px;
-}
 .form-billing__input {
+	background-color: #F6F6F6;
+	padding: 16px 0px 16px 20px;
+	border-radius: 8px;
+	
 }
+
+.form-billing__line--grow{
+	flex-grow: 0;
+}
+
 .form-billing__label {
+	font-size: 16px;
+	color: #3C4242;
+	font-weight: 600;
+	font-family: "Causten",serif;
+	
+}
+.maket-two input,textarea::placeholder {
+	font-size: 14px;
+}
+.form-billing__label:not(:last-child){
+	margin-bottom: 10px;
+}
+.form-billing__select{
+	color: #807D7E;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Causten', serif;
+	
+	padding: 16px 0px 16px 20px;
+	border-radius: 8px;
+	appearance: none;        
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url("../img/icon-mark-select.svg") no-repeat right 23px center;
+	background-color: #F6F6F6;
+
 }
 .form-billing__button {
+	padding: 16px 20px;
+	background-color: #8A33FD;
+	color: #ffffff;
+	border-radius: 8px;
+	font-family: "Causten",serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.form-billing__button:not(:last-child){
+	margin-bottom: 20px;
 }

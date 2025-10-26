@@ -255,12 +255,12 @@
 		</div>
 
 		<div class="maket-two">
-			<h2 class="maket-two__title">Check Out</h2>
 			<form action="#" method="post" class="maket-two__form form-billing">
+				<h2 class="maket-two__title">Check Out</h2>
 				<h3 class="form-billing__title">Billing Details</h3>
 				<div class="form-billing__content">
 					<div class="form-billing__line">
-						<label .class="form-billing__label" for="name">First Name*</label>
+						<label class="form-billing__label" for="name">First Name*</label>
 						<input name="name" id="name" type="text" class="form-billing__input" placeholder="First Name">
 					</div>
 					<div class="form-billing__line">
@@ -287,66 +287,67 @@
 						<input name="suite" id="suite" type="text" class="form-billing__input"
 							placeholder="House number and street name">
 					</div>
-					<div class="form-billing__info-address">
-						<div class="form-billing__line form-billing__line--mini-width">
-							<label class="form-billing__label" for="city">City*</label>
-							<input name="city" id="city" type="text" class="form-billing__input" placeholder="Town / City">
-						</div>
-						<div class="form-billing__line form-billing__line--mini-width">
-							<label class="form-billing__label" for="state-check-out">State*</label>
-							<select class="form-billing__select" name="state-check-out" id="state-check-out">
-								<option value="">State</option>
-							</select>
-							<script>
-								const countries = [
-									"Австралія", "Австрія", "Азербайджан", "Албанія", "Алжир", "Ангола", "Андорра", "Антигуа і Барбуда",
-									"Аргентина", "Вірменія", "Афганістан", "Багамські Острови", "Бангладеш", "Барбадос", "Бахрейн",
-									"Білорусь", "Бельгія", "Беліз", "Бенін", "Болгарія", "Болівія", "Боснія і Герцеговина", "Ботсвана",
-									"Бразилія", "Бруней", "Буркіна-Фасо", "Бурунді", "Бутан", "Вануату", "Ватикан", "Велика Британія",
-									"Венесуела", "В’єтнам", "Вірменія", "Габон", "Гаїті", "Гайана", "Гамбія", "Гана", "Гватемала", "Гвінея",
-									"Гвінея-Бісау", "Гондурас", "Гренада", "Греція", "Грузія", "Данія", "Демократична Республіка Конго",
-									"Джибуті", "Домініка", "Домініканська Республіка", "Еквадор", "Екваторіальна Гвінея", "Еритрея",
-									"Естонія", "Есватіні", "Ефіопія", "Єгипет", "Ємен", "Замбія", "Зімбабве", "Ізраїль", "Індія",
-									"Індонезія", "Ірак", "Іран", "Ірландія", "Ісландія", "Іспанія", "Італія", "Йорданія", "Кабо-Верде",
-									"Казахстан", "Камбоджа", "Камерун", "Канада", "Катар", "Кенія", "Киргизстан", "Китай", "Кіпр", "Колумбія",
-									"Коморські Острови", "Конго", "Коста-Рика", "Кот-д’Івуар", "Куба", "Кувейт", "Лаос", "Латвія", "Лесото",
-									"Литва", "Ліван", "Лівія", "Ліхтенштейн", "Люксембург", "Маврикій", "Мавританія", "Мадагаскар",
-									"Малаві", "Малайзія", "Малі", "Мальдіви", "Мальта", "Марокко", "Мексика", "Мікронезія", "Мозамбік",
-									"Молдова", "Монако", "Монголія", "Намібія", "Непал", "Нігер", "Нігерія", "Нідерланди", "Нікарагуа",
-									"Німеччина", "Нова Зеландія", "Норвегія", "Об’єднані Арабські Емірати", "Оман", "Пакистан", "Палау",
-									"Панама", "Папуа — Нова Гвінея", "Парагвай", "Перу", "Південна Африка", "Південна Корея",
-									"Південний Судан", "Північна Македонія", "Польща", "Португалія", "Руанда", "Румунія", "Сальвадор",
-									"Самоа", "Сан-Марино", "Саудівська Аравія", "Сенегал", "Сент-Вінсент і Гренадини", "Сент-Кітс і Невіс",
-									"Сент-Люсія", "Сербія", "Сингапур", "Сирія", "Словаччина", "Словенія", "Соломонові Острови", "Сомалі",
-									"Судан", "Суринам", "США", "Сьєрра-Леоне", "Таджикистан", "Таїланд", "Танзанія", "Того", "Тонга",
-									"Тринідад і Тобаго", "Туніс", "Туреччина", "Туркменістан", "Уганда", "Угорщина", "Узбекистан",
-									"Україна", "Уругвай", "Фіджі", "Філіппіни", "Фінляндія", "Франція", "Хорватія", "Центральноафриканська Республіка",
-									"Чад", "Чехія", "Чилі", "Чорногорія", "Швейцарія", "Швеція", "Шрі-Ланка", "Ямайка", "Японія"
-								];
-								const select = document.getElementById("state-check-out");
-								countries.forEach(name => {
-									const option = document.createElement("option");
-									option.value = name;
-									option.textContent = name;
-									select.appendChild(option);
-								});
-							</script>
-						</div>
-						<div class="form-billing__line form-billing__line--mini-width">
-							<label class="form-billing__label" for="postal">Postal Code*</label>
-							<input name="postal" id="postal" type="text" class="form-billing__input" placeholder="Postal Code">
-						</div>
+
+					<div class="form-billing__line form-billing__line--mini-width">
+						<label class="form-billing__label" for="city">City*</label>
+						<input name="city" id="city" type="text" class="form-billing__input" placeholder="Town / City">
 					</div>
-					<div class="form-billing__line">
+					<div class="form-billing__line form-billing__line--mini-width">
+						<label class="form-billing__label" for="state-check-out">State*</label>
+						<select class="form-billing__select" name="state-check-out" id="state-check-out">
+							<option value="">State</option>
+						</select>
+						<script>
+							const countries = [
+								"Австралія", "Австрія", "Азербайджан", "Албанія", "Алжир", "Ангола", "Андорра", "Антигуа і Барбуда",
+								"Аргентина", "Вірменія", "Афганістан", "Багамські Острови", "Бангладеш", "Барбадос", "Бахрейн",
+								"Білорусь", "Бельгія", "Беліз", "Бенін", "Болгарія", "Болівія", "Боснія і Герцеговина", "Ботсвана",
+								"Бразилія", "Бруней", "Буркіна-Фасо", "Бурунді", "Бутан", "Вануату", "Ватикан", "Велика Британія",
+								"Венесуела", "В’єтнам", "Вірменія", "Габон", "Гаїті", "Гайана", "Гамбія", "Гана", "Гватемала", "Гвінея",
+								"Гвінея-Бісау", "Гондурас", "Гренада", "Греція", "Грузія", "Данія", "Демократична Республіка Конго",
+								"Джибуті", "Домініка", "Домініканська Республіка", "Еквадор", "Екваторіальна Гвінея", "Еритрея",
+								"Естонія", "Есватіні", "Ефіопія", "Єгипет", "Ємен", "Замбія", "Зімбабве", "Ізраїль", "Індія",
+								"Індонезія", "Ірак", "Іран", "Ірландія", "Ісландія", "Іспанія", "Італія", "Йорданія", "Кабо-Верде",
+								"Казахстан", "Камбоджа", "Камерун", "Канада", "Катар", "Кенія", "Киргизстан", "Китай", "Кіпр", "Колумбія",
+								"Коморські Острови", "Конго", "Коста-Рика", "Кот-д’Івуар", "Куба", "Кувейт", "Лаос", "Латвія", "Лесото",
+								"Литва", "Ліван", "Лівія", "Ліхтенштейн", "Люксембург", "Маврикій", "Мавританія", "Мадагаскар",
+								"Малаві", "Малайзія", "Малі", "Мальдіви", "Мальта", "Марокко", "Мексика", "Мікронезія", "Мозамбік",
+								"Молдова", "Монако", "Монголія", "Намібія", "Непал", "Нігер", "Нігерія", "Нідерланди", "Нікарагуа",
+								"Німеччина", "Нова Зеландія", "Норвегія", "Об’єднані Арабські Емірати", "Оман", "Пакистан", "Палау",
+								"Панама", "Папуа — Нова Гвінея", "Парагвай", "Перу", "Південна Африка", "Південна Корея",
+								"Південний Судан", "Північна Македонія", "Польща", "Португалія", "Руанда", "Румунія", "Сальвадор",
+								"Самоа", "Сан-Марино", "Саудівська Аравія", "Сенегал", "Сент-Вінсент і Гренадини", "Сент-Кітс і Невіс",
+								"Сент-Люсія", "Сербія", "Сингапур", "Сирія", "Словаччина", "Словенія", "Соломонові Острови", "Сомалі",
+								"Судан", "Суринам", "США", "Сьєрра-Леоне", "Таджикистан", "Таїланд", "Танзанія", "Того", "Тонга",
+								"Тринідад і Тобаго", "Туніс", "Туреччина", "Туркменістан", "Уганда", "Угорщина", "Узбекистан",
+								"Україна", "Уругвай", "Фіджі", "Філіппіни", "Фінляндія", "Франція", "Хорватія", "Центральноафриканська Республіка",
+								"Чад", "Чехія", "Чилі", "Чорногорія", "Швейцарія", "Швеція", "Шрі-Ланка", "Ямайка", "Японія"
+							];
+							const select = document.getElementById("state-check-out");
+							countries.forEach(name => {
+								const option = document.createElement("option");
+								option.value = name;
+								option.textContent = name;
+								select.appendChild(option);
+							});
+						</script>
+					</div>
+					<div class="form-billing__line form-billing__line--mini-width">
+						<label class="form-billing__label" for="postal">Postal Code*</label>
+						<input name="postal" id="postal" type="text" class="form-billing__input" placeholder="Postal Code">
+					</div>
+
+					<div class="form-billing__line form-billing__line--grow">
 						<label class="form-billing__label" for="phone">Phone*</label>
 						<input name="phone" id="phone" type="tel" class="form-billing__input" placeholder="Phone">
 					</div>
 
 				</div>
-				<button class="form-billing__button" type="sumbit">Contine</button>
+				<button class="form-billing__button" type="sumbit">Continue to delivery</button>
 				<div class="form-billing__line">
-					<input name="checkbox" id="checkbox" type="checkbox" class="form-billing__input">
 					<label class="form-billing__label" for="checkbox">Save my information for a faster checkout</label>
+					<input name="checkbox" id="checkbox" type="checkbox" class="form-billing__input">
+
 				</div>
 			</form>
 		</div>
