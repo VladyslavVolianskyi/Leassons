@@ -167,7 +167,8 @@ input,textarea::placeholder{
 	appearance: none;        
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: url("../img/icon-mark-select.svg") no-repeat right 18px center;
+	background: url("../img/icon-mark-select.png") no-repeat right 20px center;
+
 }
 .select-line {
 	height: 55px;
@@ -206,6 +207,7 @@ input,textarea::placeholder{
 	width: 0;
 	height: 0;
 	opacity: 0;
+	
 }
 
 .checbox__input:focus-visible + .checbox__label {
@@ -213,20 +215,33 @@ input,textarea::placeholder{
 	border-radius: 8px;
 }
 
+.checbox__input:checked + .checbox__label::before{
+	flex: 0 0 10px;
+	height: 16px;
+	border-right: 2px solid #8A33FD;
+	border-bottom: 2px solid #8A33FD;
+	border-left: 0px;
+	border-top: 0px;
+	transform: rotate(35deg);
+}
+
 .checbox__label {
 	display: flex;
 	gap: 11px;
 	font-family: 'Causten',serif;
 	color: #3C4242;
+	padding: 5px;
 }
 
 .checbox__label::before {
 	width: 20px;
 	height: 20px;
+	flex: 0 0 20px;
 	background-color: #ffffff;
 	border: 2px solid #BEBCBD;
 	border-radius: 2px;
 	content: "";
+	transition: all 0.3s;
 }
 
 
@@ -372,4 +387,54 @@ input,textarea::placeholder{
 }
 .form-billing__button:not(:last-child){
 	margin-bottom: 20px;
+}
+
+.form-billing__line--checkbox{
+
+	flex-direction: row;
+	position: relative;
+	padding: 0;
+
+}
+.form-billing__input--checkbox{
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.form-billing__label--checkbox{
+	display: flex;
+	gap: 10px;
+	padding: 5px;
+	color: #3C4242;
+	font-family: "Causten",serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.form-billing__label--checkbox::before {
+	width: 20px;
+	height: 20px;
+	flex: 0 0 20px;
+	background-color: #ffffff;
+	border: 2px solid #BEBCBD;
+	border-radius: 2px;
+	content: "";
+	transition: all 0.3s;
+}
+
+.form-billing__input--checkbox:focus-visible + .form-billing__label--checkbox{
+	outline: 2px solid black;
+	border-radius: 8px;
+}
+
+.form-billing__input--checkbox:checked + .form-billing__label--checkbox::before{
+	flex: 0 0 10px;
+	height: 16px;
+	border-right: 2px solid #8A33FD;
+	border-bottom: 2px solid #8A33FD;
+	border-left: 0px;
+	border-top: 0px;
+	transform: rotate(35deg);
 }
